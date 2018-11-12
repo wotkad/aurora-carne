@@ -1,0 +1,54 @@
+.error
+	display flex
+	min-height 311px
+	align-items center
+	&__number
+		font-size 12.5rem
+		font-family $Light
+		line-height 242px
+		text-align center
+		color #CBCBCB
+	&__desc
+		padding-left 50px
+		display flex
+		flex-direction column
+		justify-content center
+		&-title
+			font-family $Light
+			font-size 2rem
+			line-height 39px
+			color $black
+			margin-bottom 15px
+		&-text
+			font-family $Light
+			font-size 1rem
+			line-height 24px
+			color $textblack
+			margin-bottom 30px
+		&-search
+			display flex
+			border-bottom 1px solid #D1D1D1
+			padding 15px 44px
+			position relative
+			input
+				border none
+				font-size 0.875rem
+				line-height 17px
+				color #8D8D8D
+				font-family $Thin
+			i
+				color #8D8D8D
+				position absolute
+				left 15px
+				font-size 14px
+				top calc(50% - 7px)
+@media(max-width 767px)
+	.error
+		flex-wrap wrap
+		&__number
+			flex-basis 100%
+		&__desc
+			padding-left 0
+			flex-basis 100%
+			&-search
+				margin-bottom 60px

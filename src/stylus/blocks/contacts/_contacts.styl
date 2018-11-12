@@ -1,0 +1,124 @@
+.contacts
+	display flex
+	flex-wrap wrap
+	&__title
+		flex-basis 100%
+		color $black
+		font-size 2rem
+		font-family $Light
+		line-height 39px
+		margin 40px 0 30px
+	&__block
+		&:nth-child(2)
+			flex-basis 40%
+			max-width 40%
+		&:nth-child(3)
+			flex-basis 60%
+			max-width 60%
+		&-smalltitle
+			text-transform uppercase
+			font-family $Regular
+			font-size 0.75rem
+			line-height 14px
+			color $footertitle
+			margin-bottom 8px
+		a
+			display inline-flex
+			transition .3s
+			&:hover
+				color $red
+		&-text
+			margin-bottom 20px
+			line-height 33px
+			font-family $Light
+			color $textblack
+			font-size 1.375rem
+		&-desc
+			font-family $LightItalic
+			font-size 1rem
+			line-height 24px
+			color #808080
+			width 60%
+		&-title
+			margin-bottom 35px
+			position relative
+			&__menu
+				display none
+				width 200px
+				position absolute
+				background-color $white
+				box-shadow 0 0 30px 4px rgba(0,0,0,.05);
+				left 23%
+				top 42px
+				&-item
+					transition .3s
+					font-size 1rem
+					color $textblack
+					font-family Thin
+					padding 15px 26px
+					min-width 200px
+					border-bottom 1px solid #EAEAEA
+					background-color $white
+					cursor pointer
+					&:hover
+						color $red
+			p
+				display inline-block
+				font-size 1.625rem
+				line-height 31px
+				color $black
+				font-family $Light
+			span
+				margin-left 5px
+				cursor pointer
+				color $red
+				font-size 1.625rem
+				line-height 31px
+				font-family $Light
+				border-bottom 1px dashed $red
+			i
+				margin-left 5px
+				font-size 16px
+				color $red
+				transition .3s
+		&-slider
+			position relative
+			&-slide
+				height 413px
+		.swiper-button-prev,
+		.swiper-button-next
+			background-color rgba(255, 255, 255, .7)
+			top 50%
+			i
+				color $red
+		.swiper-button-prev
+			left 20px
+		.swiper-button-next
+			right 20px
+	&__map
+		width 100%
+		height 500px
+		padding-bottom 60px
+.active-menu
+	display block
+@media(max-width: 991px)
+	.contacts
+		&__block
+			&-desc
+				width 100%
+				margin-bottom 40px
+			&:nth-child(2),
+			&:nth-child(3)
+				flex-basis 100%
+				max-width 100%
+			&-slider
+				&-slide
+					height 313px
+@media(max-width: 991px)
+	.contacts
+		&__block
+			&-slider
+				&-slide
+					height 213px
+		&__map
+			height 300px

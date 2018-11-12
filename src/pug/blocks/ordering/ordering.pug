@@ -1,0 +1,110 @@
+.g-wrapper
+	.ordering
+		.ordering__title
+			.ordering__title-text Оформление заказа
+			.ordering__title-cart
+				a(href="#") Перейти в корзину
+				i.fa.fa-shopping-cart
+		form(action="#").ordering__form
+			.ordering__form-title Контактные данные
+			.ordering__form-input
+				i.fa.fa-user
+				input(type="text" placeholder="Фамилия Имя Отчество*" required="required")
+			.ordering__form-input
+				i.fa.fa-phone
+				input(type="tel" placeholder="Номер телефона*" required="required")
+			.ordering__form-input
+				i.fa.fa-location-arrow
+				input(type="text" placeholder="Адрес*" required="required")
+			.ordering__form-input
+				i.fa.fa-at
+				input(type="text" placeholder="E-mail*" required="required")
+			.ordering__form-radios
+				.ordering__form-radios-title Оплата
+				.ordering__form-radios-input
+					label
+						input.radio(type="radio" name="pay" value="Оплата картой при получении")
+						span.radio-custom
+						span.label Оплата картой при получении
+					label
+						input.radio(type="radio" name="pay" value="Оплата наличными при получении")
+						span.radio-custom
+						span.label Оплата наличными при получении
+			.ordering__form-radios
+				.ordering__form-radios-title Доставка
+				.ordering__form-radios-input
+					label
+						input.radio(type="radio" name="delivery" value="Доставка по Москве")
+						span.radio-custom
+						span.label Доставка по Москве
+					label
+						input.radio(type="radio" name="delivery" value="Доставка по Московской области")
+						span.radio-custom
+						span.label Доставка по Московской области
+					label
+						input.radio(type="radio" name="delivery" value="Доставка по РФ")
+						span.radio-custom
+						span.label Доставка по РФ
+			.ordering__form-title Состав заказа
+			.ordering__form-table
+				.ordering__form-table__titles
+					.ordering__form-table__titles-title Фото
+					.ordering__form-table__titles-title Наименование
+					.ordering__form-table__titles-title Количество
+					.ordering__form-table__titles-title Цена
+					.ordering__form-table__titles-title Сумма
+					.ordering__form-table__titles-title
+				.ordering__form-table__items
+					.ordering__form-table__items-image(style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;")
+					.ordering__form-table__items-title Запонки Dalvey Admiralty
+					.ordering__form-table__items-counts
+						span.ordering__form-table__items-counts__count(data-type="plus")
+							i.fa.fa-plus
+						input.ordering__form-table__items-counts__count(type="text" value="1")
+						span.ordering__form-table__items-counts__count(data-type="minus")
+							i.fa.fa-minus
+					.ordering__form-table__items-price 2 499 руб.
+					.ordering__form-table__items-total 2 499 руб.
+					.ordering__form-table__items-delete
+						i.fa.fa-times
+				.ordering__form-table__items
+					.ordering__form-table__items-image(style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;")
+					.ordering__form-table__items-title Запонки Dalvey Admiralty
+					.ordering__form-table__items-counts
+						span.ordering__form-table__items-counts__count(data-type="plus")
+							i.fa.fa-plus
+						input.ordering__form-table__items-counts__count(type="text" value="1")
+						span.ordering__form-table__items-counts__count(data-type="minus")
+							i.fa.fa-minus
+					.ordering__form-table__items-price 2 499 руб.
+					.ordering__form-table__items-total 2 499 руб.
+					.ordering__form-table__items-delete
+						i.fa.fa-times
+				.ordering__form-table__items
+					.ordering__form-table__items-image(style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;")
+					.ordering__form-table__items-title Запонки Dalvey Admiralty
+					.ordering__form-table__items-counts
+						span.ordering__form-table__items-counts__count(data-type="plus")
+							i.fa.fa-plus
+						input.ordering__form-table__items-counts__count(type="text" value="1")
+						span.ordering__form-table__items-counts__count(data-type="minus")
+							i.fa.fa-minus
+					.ordering__form-table__items-price 2 499 руб.
+					.ordering__form-table__items-total 2 499 руб.
+					.ordering__form-table__items-delete
+						i.fa.fa-times
+			.ordering__form-title Дополнительный коментарий
+			.ordering__form-input
+				i.fa.fa-comment
+				input(type="text" placeholder="Сообщение к заказу")
+			.ordering__form-footer
+				.ordering__form-footer-update
+					button(type="button")
+						i.fa.fa-refresh
+						span Обновить корзину
+				.ordering__form-footer-totals
+					.ordering__form-footer-totals-total Итого:
+						span 2 499 руб.
+					.ordering__form-footer-totals-button
+						button(type="submit")
+							span Оформить заказ

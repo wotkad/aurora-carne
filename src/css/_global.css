@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: $textblack;
+}
+html,
+body {
+  height: 100%;
+  background-color: $white;
+}
+ul li {
+  display: inline-block;
+  letter-spacing: normal;
+}
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  font-family: $ThinItalic;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  font-family: $ThinItalic;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+  font-family: $ThinItalic;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+  font-family: $ThinItalic;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+}
+.wrapper.render {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.g-wrapper {
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+}
+section {
+  position: relative;
+}
+@media (max-width: 1320px) {
+  .g-wrapper {
+    width: 100%;
+    padding: 0 15px;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1140px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+}

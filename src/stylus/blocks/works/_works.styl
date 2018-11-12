@@ -1,0 +1,192 @@
+.works
+	display flex
+	flex-wrap wrap
+	&__caption
+		display none
+		&-close
+			height 60px
+			background-color #e8e8e8
+			display flex
+			align-items center
+			justify-content center
+			cursor pointer
+		&-desc
+			margin 100px 40px 40px 40px
+			&-title
+				color $black
+				font-size 1.5rem
+				line-height 36px
+				font-family $Regular
+				margin-bottom 31px
+				text-align left
+			&-smalltitle
+				display flex
+				align-items center
+				margin-bottom 9px
+				span
+					color $footertitle
+					font-size 0.75rem
+					line-height 14px
+					letter-spacing 1px
+					font-family $Regular
+					text-transform uppercase
+					margin-left 8px
+			&-text
+				color $textblack
+				font-family $Light
+				font-size 1.25rem
+				line-height 30px
+				text-align left
+				margin-bottom 21px
+	&__title
+		flex-basis 100%
+		color $black
+		font-size 2rem
+		font-family $Light
+		line-height 39px
+		margin 40px 0 30px
+	&__blocks
+		display flex
+		flex-basis 100%
+		flex-wrap wrap
+		&-block
+			cursor pointer
+			flex-basis calc(25% - 15px)
+			margin-bottom 15px
+			height 560px
+			margin-right 15px
+			img
+				display none
+			&:nth-child(4n)
+				margin-right 0
+	&__button
+		margin 40px 0 60px
+		flex-basis 100%
+		button
+			background-color $white
+			padding 25px
+			width 100%
+			font-size 1.5rem
+			line-height 29px
+			border 1px solid $red
+			font-family $Light
+			color $red
+			display flex
+			align-items center
+			justify-content center
+			cursor pointer
+			transition .3s
+			i
+				margin-right 5px
+				color $red
+				transition .3s
+				margin-top -3px
+			&:hover
+				color $white
+				background-color $red
+		&:hover i
+			transform rotate(180deg)
+			color $white
+#works .lg-outer .lg-img-wrap
+	padding 20px
+#works .lg-sub-html
+	width 400px
+	background-color $white
+	z-index 100
+	left auto
+	height 100%
+	position absolute
+	right -400px
+	overflow hidden
+	top 0
+	padding 0
+	color $black
+#works .lg-download,
+#works #lg-counter
+	display none
+#works .lg-toolbar
+	background none
+	width 400px
+	left auto
+	right -400px
+	display flex
+	align-items center
+	justify-content center
+	height 60px
+	background-color #e8e8e8
+	cursor pointer
+	i
+		color $red
+		margin-top -3px
+		font-size 1rem
+	span
+		display block
+		color $red
+		font-family $Light
+		font-size 1.125rem
+		line-height 22px
+		margin-left 5px
+		transition .3s
+		border-bottom 1px dashed #e8e8e8
+	&:hover span
+		border-bottom 1px dashed $red
+#works .lg-backdrop
+	background rgba(0, 0, 0, 0.6)
+#works .lg-outer .lg-inner
+	z-index 1
+#works .lg-outer .lg
+	overflow visible
+#works .lg-outer,
+#works .lg-backdrop
+	width calc(100% - 400px) !important
+#works .lg-actions .lg-next,
+#works .lg-actions .lg-prev
+	top -webkit-calc(50% - 20px)
+	color $red
+	top calc(50% - 20px)
+	background-color $white
+	border-radius 50%
+	width 50px
+	height 50px
+	display flex
+	align-items center
+	justify-content center
+	box-shadow 0px 0px 30px rgba(0,0,0,0.1)
+	transition 0.3s
+	&:hover
+		color $white
+		background-color $red
+@media(max-width 991px)
+	.works
+		&__blocks
+			&-block
+				flex-basis calc(50% - 15px)
+				height 400px
+		&__button
+			margin 21px 0 26px
+			button
+				padding 12px
+				line-height 15px
+				font-size 0.75rem
+	#works .lg-outer,
+	#works .lg-backdrop
+		width 100% !important
+		height calc(100% - 375px)
+	#works .lg-toolbar
+		left auto
+		top auto
+		bottom -60px
+		right 0
+		width 100%
+		display flex
+		align-items center
+		justify-content center
+		cursor pointer
+	#works .lg-sub-html
+		width 100%
+		left 0
+		right 0
+		bottom -375px
+		top auto
+		min-height 375px
+		height 375px

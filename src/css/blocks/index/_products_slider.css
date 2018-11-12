@@ -1,0 +1,190 @@
+.products__slider {
+  position: relative;
+  border-bottom: 1px solid #ededed;
+}
+.products__slider .swiper-slide-active .products__slider-slide {
+  border-left: 1px solid #ededed;
+}
+.products__slider-slide {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 9px 0;
+  border-right: 1px solid #ededed;
+  min-height: 402px;
+}
+.products__slider-slide-img {
+  -webkit-background-size: cover;
+          background-size: cover;
+  grid-row: 1/3;
+  height: 402px;
+}
+.products__slider-slide-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.products__slider-slide-info:nth-child(2) {
+  margin-top: 10px;
+}
+.products__slider-slide-info:nth-child(3) {
+  margin-bottom: 10px;
+}
+.products__slider-slide-info__title {
+  font-family: $Light;
+  font-size: 1.125rem;
+  line-height: 22px;
+  width: 80%;
+  color: $textblack;
+}
+.products__slider-slide-info__separator {
+  height: 1px;
+  background-color: $red;
+  width: 30%;
+  margin: 20px 0 15px;
+}
+.products__slider-slide-info__desc-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.products__slider-slide-info__desc-item:nth-child(1) {
+  margin-bottom: 12px;
+}
+.products__slider-slide-info__desc-item p {
+  font-family: $Light;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: $textgray;
+  margin-left: 10px;
+}
+.products__slider-slide-info__desc-item span {
+  font-family: $Light;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: $textblack;
+  margin-left: 3px;
+}
+.products__slider-slide-info__subdesc p {
+  font-family: $LightItalic;
+  font-size: 0.625rem;
+  line-height: 12px;
+  color: $textgray;
+  margin-top: 7px;
+  margin-bottom: 25px;
+}
+.products__slider-slide-button {
+  border: 1px solid $red;
+  padding: 7.5px;
+  width: 80%;
+  font-family: $Light;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: $red;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+.products__slider-slide-button:hover {
+  background: $red;
+  color: $white;
+}
+div.swiper-slide-active:nth-child(1) > div:nth-child(1) {
+  border-left: 1px solid #ededed;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: -webkit-calc(50% - 20px);
+  top: calc(50% - 20px);
+  background-color: $red;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+          box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.swiper-button-prev i,
+.swiper-button-next i {
+  color: $white;
+  margin-top: -1px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.swiper-button-prev {
+  background-image: none;
+  left: -25px;
+}
+.swiper-button-prev i {
+  margin-left: -1px;
+}
+.swiper-button-prev:hover i {
+  margin-left: -9px;
+}
+.swiper-button-next {
+  background-image: none;
+  right: -25px;
+}
+.swiper-button-next i {
+  margin-right: -1px;
+}
+.swiper-button-next:hover i {
+  margin-right: -9px;
+}
+@media (max-width: 1380px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+  .swiper-button-prev i,
+  .swiper-button-next i {
+    font-size: 9px;
+  }
+  .swiper-button-prev {
+    left: 20px;
+  }
+  .swiper-button-next {
+    right: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .products__slider-slide {
+    padding: 19px 0px;
+    border-right: none;
+  }
+  .products__slider .swiper-slide-active .products__slider-slide {
+    border: none;
+  }
+  div.swiper-slide-active:nth-child(1) > div:nth-child(1) {
+    border-left: none;
+  }
+}

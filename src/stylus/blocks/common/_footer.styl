@@ -1,0 +1,131 @@
+.footer-bg
+	background-color $darkgray
+	border-top 1px solid #EAEAEA
+	border-bottom 1px solid #EAEAEA
+.footer
+	display flex
+	flex-wrap wrap
+	&__copy
+		color $copyright
+		font-size 1rem
+		line-height 31px
+		font-family $Light
+		flex-basis 100%
+		text-align center
+		padding 30px
+		border-top 1px solid #EAEAEA
+	&__item
+		display flex
+		flex-direction column
+		flex-basis 25%
+		padding-top 40px
+		padding-bottom 50px
+		&:nth-child(3)
+			border-left 1px solid #EAEAEA
+			padding-left 60px
+			flex-basis 30%
+		&:nth-child(4)
+			flex-basis 20%
+			display inline-block
+		&-title
+			font-family $Regular
+			color $footertitle
+			font-size 0.75rem
+			letter-spacing 1px
+			line-height 14px
+			margin-bottom 20px
+		&-copy
+			color $copyright
+			font-size 1rem
+			line-height 31px
+			font-family $Light
+			flex-basis 100%
+			display none
+		&-text
+			font-size 1.125rem
+			font-family $Light
+			color $textblack
+			line-height 35px
+			transition .3s
+			display flex
+			flex-wrap wrap
+			position relative
+			&:hover
+				color $textblack + 40%
+			i
+				color $red
+				top 6px
+				position absolute
+			&-link
+				font-size 1.125rem
+				font-family $Light
+				color $textdarkergray
+				line-height 35px
+				display inline-block
+				&:nth-child(2)
+					flex-basis 75%
+					padding-left 25px
+				&:nth-child(3)
+					flex-basis 100%
+					padding-left 25px
+			a
+				transition .3s
+				&:hover
+					color $black
+		&-social
+			padding-bottom 25px
+			border-bottom 1px solid #EAEAEA
+			margin-bottom 20px
+			a
+				margin-right 12px
+		&-link
+			color $red
+			border-bottom 1px solid $red
+			font-family $Light
+			line-height 31px
+			font-size 1rem
+			transition .3s
+			&:hover
+				color $black
+				border-color $black
+@media(max-width: 991px)
+	.footer
+		&__item
+			flex-basis 50%
+			padding-top 20px
+			padding-bottom 0
+			&:nth-child(3)
+				border-left 0
+				padding-left 0
+				flex-basis 50%
+				padding-bottom 20px
+			&:nth-child(4)
+				flex-basis 50%
+				padding-bottom 20px
+@media(max-width: 550px)
+	.footer
+		&__item
+			flex-basis 50%
+			border-top 1px solid #EAEAEA
+			&-copy
+				display block
+			&-text
+				line-height 30px
+				font-size 0.875rem
+			&:nth-child(1)
+				flex-basis 45%
+				border-top none
+			&:nth-child(2)
+				flex-basis 55%
+				border-top none
+			&:nth-child(3)
+				margin-top 20px
+				border-left 0
+				padding-left 0
+				flex-basis 100%
+			&:nth-child(4)
+				margin-top 30px
+				flex-basis 100%
+				padding-bottom 25px
+		&__copy
+			display none

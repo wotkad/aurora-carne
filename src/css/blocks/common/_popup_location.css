@@ -1,0 +1,185 @@
+.popuplocation-bg {
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.popuplocation {
+  position: fixed;
+  width: 461px;
+  height: 275px;
+  left: -webkit-calc(50% - 230.5px);
+  left: calc(50% - 230.5px);
+  top: -webkit-calc(50% - 137.5px);
+  top: calc(50% - 137.5px);
+  border: 1px solid $white;
+  padding: 20px;
+  z-index: 9999;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.popuplocation__container {
+  background-color: $white;
+  height: 100%;
+  padding: 30px 42px 54px 35px;
+  position: relative;
+}
+.popuplocation__container-title {
+  font-family: $Light;
+  color: $black;
+  line-height: 29px;
+  font-size: 1.5rem;
+  position: relative;
+}
+.popuplocation__container-separator {
+  width: 33.33334%;
+  height: 2px;
+  background-color: $red;
+  margin-top: 15px;
+  margin-bottom: 29px;
+}
+.popuplocation__container-close {
+  position: absolute;
+  right: 42px;
+  top: 42px;
+  cursor: pointer;
+}
+.popuplocation__container-close:hover svg path {
+  fill: $black;
+}
+.popuplocation__container-close svg path {
+  fill: $red;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.popuplocation__container-close i {
+  display: none;
+}
+.popuplocation__container-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.popuplocation__container-content-item {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  font-family: $Thin;
+  line-height: 22px;
+  font-size: 1.125rem;
+  margin-bottom: 18px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.popuplocation__container-content-item:hover {
+  color: $red;
+}
+.popuplocation__container-content-item:hover i {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.popuplocation__container-content-item span {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.popuplocation__container-content-item:hover span {
+  padding-left: 20px;
+}
+.popuplocation__container-content-item i {
+  position: absolute;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  margin-right: 3px;
+  color: $red;
+}
+.popuplocation__active {
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: fixed;
+}
+@media (max-width: 650px) {
+  .popuplocation {
+    width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+    left: auto;
+    margin: 25px;
+    padding: 0;
+    height: 330px;
+    top: -webkit-calc(50% - 185px);
+    top: calc(50% - 185px);
+  }
+  .popuplocation__container-content-item {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .popuplocation__container-title {
+    text-align: center;
+  }
+  .popuplocation__container-separator {
+    margin-left: 33.33334%;
+  }
+  .popuplocation__container-close {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: $red;
+    width: 50px;
+    height: 50px;
+    right: -25px;
+    top: -25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .popuplocation__container-close svg {
+    display: none;
+  }
+  .popuplocation__container-close i {
+    display: block;
+    color: $white;
+    font-size: 23px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .popuplocation__container-close:hover i {
+    color: $black;
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Aurora Carne • Оформление заказа</title>
+    <link rel="stylesheet" href="/css/libs.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="header">
+        <div class="header">
+          <div class="g-wrapper">
+            <div class="top__menu">
+              <div class="l__menu"><a class="l__menu-item" href="#">Индивидуальный пошив</a><a class="l__menu-item" href="#"><i class="fa fa-book"></i><span>Lookbook</span></a><a class="l__menu-item" href="#">Цены</a><a class="l__menu-item" href="#">Наши работы</a><a class="l__menu-item" href="#">Ткани</a><a class="l__menu-item" href="#">Контакты</a></div>
+              <div class="r__menu"><a class="r__menu-item" href="#"><i class="fa fa-location-arrow"></i><span>Регион:</span><span id="location-button">Москва</span><i class="fa fa-angle-down" id="location-arrow"></i>
+                  <div class="r__menu-item-dropdown" id="location-popup"><a class="r__menu-item-dropdown-link" href="#">Москва</a><a class="r__menu-item-dropdown-link" href="#">Самара</a><a class="r__menu-item-dropdown-link" href="#">Ярославль</a><a class="r__menu-item-dropdown-link" href="#">Санкт-Петербург</a><a class="r__menu-item-dropdown-link" href="#">Новороссийск</a></div></a><a class="r__menu-item" href="tel:74993908007" id="header-hrefphone"><i class="fa fa-phone"></i><span id="header-phone">+7 (499) 390-80-07</span></a>
+                <div class="r__menu-item callback">Обратный звонок</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="g-wrapper">
+            <div class="top2__menu"><a class="top2__menu-item" href="#"><img src="/images/logo.png"/></a>
+              <div class="top2__menu-item">
+                <div class="top2__menu-item-link"><a href="#">Женская одежда<i class="fa fa-angle-down"></i></a>
+                  <div class="top2__menu-item-dropdown"><a class="top2__menu-item-dropdown-link" href="#">Костюм</a><a class="top2__menu-item-dropdown-link" href="#">Пиджак</a><a class="top2__menu-item-dropdown-link" href="#">Сорочка</a><a class="top2__menu-item-dropdown-link" href="#">Пальто</a><a class="top2__menu-item-dropdown-link" href="#">Брюки</a><a class="top2__menu-item-dropdown-link" href="#">Жилетка</a></div>
+                </div>
+                <div class="top2__menu-item-link"><a href="#">Мужская одежда<i class="fa fa-angle-down"></i></a>
+                  <div class="top2__menu-item-dropdown"><a class="top2__menu-item-dropdown-link" href="#">Костюм</a><a class="top2__menu-item-dropdown-link" href="#">Пиджак</a><a class="top2__menu-item-dropdown-link" href="#">Сорочка</a><a class="top2__menu-item-dropdown-link" href="#">Пальто</a><a class="top2__menu-item-dropdown-link" href="#">Брюки</a><a class="top2__menu-item-dropdown-link" href="#">Жилетка</a></div>
+                </div><a class="top2__menu-item-link" href="#">Обувь</a><a class="top2__menu-item-link" href="#">Аксессуары</a><a class="top2__menu-item-link" href="#">Подарочные сертификаты</a>
+              </div>
+              <div class="top2__menu-item"><span>Соц. сети:</span>
+                <div class="top2__menu-item-social"><a href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V30H15.9768V18.4116H12.0712V13.6809H15.9768V9.70798C15.9768 6.81858 18.3191 4.47627 21.2085 4.47627H25.2916V8.73024H22.37C21.4518 8.73024 20.7075 9.47456 20.7075 10.3927V13.681H25.2182L24.5948 18.4117H20.7075V30H30V0H0Z" fill="#AC646E"/></svg></a><a href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.1447 6.87671H9.85518C8.21302 6.87671 6.87671 8.21294 6.87671 9.8552V20.1447C6.87671 21.7872 8.21302 23.1235 9.85518 23.1235H20.1447C21.7871 23.1235 23.1234 21.7872 23.1234 20.1447V9.8552C23.1234 8.21303 21.7871 6.87671 20.1447 6.87671ZM14.9997 20.3484C12.0509 20.3484 9.65153 17.9489 9.65153 14.9998C9.65153 12.051 12.0509 9.65154 14.9997 9.65154C17.9489 9.65154 20.3483 12.051 20.3483 14.9998C20.3483 17.9489 17.9489 20.3484 14.9997 20.3484ZM20.5204 10.7575C19.8222 10.7575 19.2545 10.1898 19.2545 9.49207C19.2545 8.79424 19.8222 8.22654 20.5204 8.22654C21.2181 8.22654 21.7858 8.79424 21.7858 9.49207C21.7858 10.1899 21.2181 10.7575 20.5204 10.7575Z" fill="#AC646E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.9997 11.9119C13.2974 11.9119 11.9111 13.2975 11.9111 14.9998C11.9111 16.7028 13.2974 18.0887 14.9997 18.0887C16.7027 18.0887 18.088 16.7028 18.088 14.9998C18.088 13.2975 16.7027 11.9119 14.9997 11.9119Z" fill="#AC646E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V30H30V0H0ZM25.3833 20.1448C25.3833 23.0337 23.0337 25.3833 20.1448 25.3833H9.85525C6.96659 25.3833 4.6167 23.0337 4.6167 20.1448V9.85525C4.6167 6.96659 6.96659 4.6167 9.85525 4.6167H20.1448C23.0337 4.6167 25.3833 6.96659 25.3833 9.85525V20.1448Z" fill="#AC646E"/></svg></a><a href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V30H30V0H0ZM21.8826 16.7172L24.488 19.711C24.8211 20.0937 24.5492 20.6907 24.0418 20.6907H21.1016C20.637 20.6907 20.1895 20.5148 19.8493 20.1984L18.9786 19.3888C17.996 18.5291 17.5784 18.2342 17.1854 18.2342C16.7924 18.2342 16.6941 18.529 16.6941 19.2905C16.6941 20.0519 16.5467 20.6907 14.2869 20.6907C12.027 20.6907 10.2584 18.9958 8.26874 16.3675C6.2791 13.7392 5.3948 10.9143 5.3948 10.9143C5.28502 10.5608 5.54933 10.202 5.91959 10.202H8.27245C8.71997 10.202 9.12757 10.4606 9.31523 10.8669C9.50784 11.2839 9.83916 11.9273 10.4059 12.8794C11.2101 14.2304 11.9826 14.839 12.4202 15.0981C12.5832 15.1946 12.7886 15.0754 12.7886 14.886V11.6455C12.7886 11.2214 12.6355 10.8117 12.3572 10.4918L12.0255 10.1104C11.9397 10.0117 12.0098 9.85808 12.1405 9.85808H15.859C16.4288 9.85808 16.8907 10.3199 16.8907 10.8897V14.6582C16.8907 14.901 17.2058 14.996 17.3399 14.7937L20.0163 10.7602C20.2273 10.4422 20.5836 10.251 20.9652 10.251H24.1069C24.5362 10.251 24.7973 10.7238 24.5687 11.0873L21.7887 15.5058C21.5495 15.8862 21.5876 16.3782 21.8826 16.7172Z" fill="#AC646E"/></svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mob__header">
+          <div class="mob__header-item"><svg class="ham hamRotate ham4" viewBox="0 0 80 80" height="50" width="50"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg></div><a class="mob__header-item" href="#"><img src="/images/logo.png"/></a><a class="mob__header-item" href="tel:74993908007"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5002 28C21.3354 28 19.9286 27.708 18.3825 27.1251C14.9898 25.8451 11.3005 23.3173 7.99168 20.0078C4.68282 16.6982 2.1555 13.0073 0.875833 9.61296C-0.288955 6.52852 -0.291779 3.99692 0.866417 2.83849C1.03403 2.67085 1.20446 2.4919 1.3796 2.30825C2.43704 1.19691 3.66021 -0.0660643 5.21483 0.00268817C6.30712 0.0478953 7.36456 0.726002 8.44931 2.0728C11.6471 6.05196 10.2054 7.47033 8.53688 9.11474L8.24121 9.4067C7.96814 9.67983 7.45119 10.9437 12.2525 15.7451C13.8213 17.3132 15.1565 18.4604 16.2234 19.1545C16.8966 19.5915 18.0981 20.2508 18.5906 19.7582L18.8872 19.4587C20.5294 17.7917 21.9475 16.3545 25.9249 19.5519C27.2724 20.635 27.9494 21.6927 27.9946 22.7861C28.0596 24.3702 26.7978 25.5682 25.6848 26.625C25.5021 26.7992 25.3232 26.9678 25.1575 27.1335C24.5793 27.7109 23.6603 28 22.5002 28ZM5.10278 0.940735C3.97848 0.940735 2.96153 2.01064 2.06228 2.95622C1.88055 3.14646 1.70446 3.332 1.53214 3.50435C0.669618 4.36611 0.75813 6.634 1.75625 9.28144C2.98978 12.5524 5.44082 16.1256 8.65741 19.3428C11.874 22.5601 15.4456 25.0107 18.7149 26.2445C21.3618 27.2437 23.6292 27.3304 24.4917 26.4667C24.6641 26.2953 24.8477 26.1201 25.036 25.9412C26.004 25.021 27.101 23.9794 27.0539 22.8228C27.0209 22.0289 26.4428 21.1747 25.3345 20.2847C22.02 17.6212 21.0944 18.563 19.5576 20.1189L19.2563 20.4231C18.5247 21.1587 17.3316 20.9976 15.7102 19.9428C14.5896 19.2138 13.2017 18.0243 11.5868 16.41C7.60279 12.4252 6.32783 9.9878 7.57548 8.73896L7.87586 8.44134C9.43707 6.9043 10.3787 5.97662 7.71484 2.66143C6.82407 1.5548 5.97002 0.976524 5.17623 0.942619C5.15174 0.941677 5.12632 0.940735 5.10278 0.940735Z" fill="#AC646E"/><path d="M22.6652 11.5717C22.6059 11.5717 22.5465 11.5604 22.4882 11.5368C22.2471 11.4389 22.1303 11.1648 22.2292 10.9247C22.8281 9.44789 22.4853 7.76487 21.3592 6.63752C20.2019 5.48003 18.4232 5.15887 16.9307 5.82944C16.6962 5.93587 16.4147 5.83227 16.3083 5.59493C16.2009 5.35759 16.3055 5.07882 16.5428 4.97239C18.3893 4.13606 20.5917 4.53822 22.0249 5.9726C23.4194 7.36743 23.8422 9.44978 23.1012 11.2788C23.0277 11.4596 22.8507 11.5717 22.6652 11.5717Z" fill="#AC646E"/><path d="M26.8685 13.2789C26.8091 13.2789 26.7498 13.2676 26.6914 13.2441C26.4494 13.1461 26.3336 12.872 26.4325 12.6319C27.7178 9.4608 26.9862 5.84894 24.5671 3.42942C22.0831 0.944913 18.263 0.24797 15.0614 1.69554C14.8242 1.79914 14.5454 1.69742 14.4381 1.46009C14.3317 1.22181 14.4362 0.943029 14.6735 0.835662C18.23 -0.771073 22.473 0.00215695 25.2329 2.76261C27.9203 5.45055 28.7338 9.46268 27.3044 12.9851C27.231 13.1678 27.054 13.2789 26.8685 13.2789Z" fill="#AC646E"/></svg></a>
+        </div>
+        <div class="mob__menu"><a class="mob__menu-item" href="#">Индивидуальный пошив</a><a class="mob__menu-item" href="#"><span><i class="fa fa-book"></i>
+              <div>Lookbook</div></span></a><a class="mob__menu-item" href="#">Цены</a><a class="mob__menu-item" href="#">Наши работы</a><a class="mob__menu-item" href="#">Ткани</a><a class="mob__menu-item" href="#">Контакты</a>
+          <div class="mob__menu-title">Каталог товаров</div>
+          <div class="mob__menu-item mob__menu-item-dropdown"><a href="#">Женская одежда</a>
+            <svg class="dd dd-01" width="14" height="14" viewBox="0 0 4 9" fill="#ac646e" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.57031 4.32031C4.6224 4.3724 4.64844 4.43229 4.64844 4.5C4.64844 4.56771 4.6224 4.6276 4.57031 4.67969L0.929688 8.32031C0.877604 8.3724 0.817708 8.39844 0.75 8.39844C0.682292 8.39844 0.622396 8.3724 0.570313 8.32031L0.179688 7.92969C0.127604 7.8776 0.101563 7.81771 0.101563 7.75C0.101563 7.68229 0.127604 7.6224 0.179688 7.57031L3.25 4.5L0.179688 1.42969C0.127604 1.3776 0.101563 1.31771 0.101563 1.25C0.101563 1.18229 0.127604 1.1224 0.179688 1.07031L0.570313 0.679687C0.622396 0.627603 0.682292 0.601562 0.75 0.601562C0.817708 0.601562 0.877604 0.627603 0.929688 0.679687L4.57031 4.32031Z" fill="#ac646e"></path>
+            </svg>
+            <ul class="dd-01-ul"><a href="#">Костюм</a><a href="#">Пиджак</a><a href="#">Сорочка</a><a href="#">Пальто</a><a href="#">Брюки</a><a href="#">Жилетка</a></ul>
+          </div>
+          <div class="mob__menu-item mob__menu-item-dropdown"><a href="#">Мужская одежда</a>
+            <svg class="dd dd-02" width="14" height="14" viewBox="0 0 4 9" fill="#ac646e" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.57031 4.32031C4.6224 4.3724 4.64844 4.43229 4.64844 4.5C4.64844 4.56771 4.6224 4.6276 4.57031 4.67969L0.929688 8.32031C0.877604 8.3724 0.817708 8.39844 0.75 8.39844C0.682292 8.39844 0.622396 8.3724 0.570313 8.32031L0.179688 7.92969C0.127604 7.8776 0.101563 7.81771 0.101563 7.75C0.101563 7.68229 0.127604 7.6224 0.179688 7.57031L3.25 4.5L0.179688 1.42969C0.127604 1.3776 0.101563 1.31771 0.101563 1.25C0.101563 1.18229 0.127604 1.1224 0.179688 1.07031L0.570313 0.679687C0.622396 0.627603 0.682292 0.601562 0.75 0.601562C0.817708 0.601562 0.877604 0.627603 0.929688 0.679687L4.57031 4.32031Z" fill="#ac646e"></path>
+            </svg>
+            <ul class="dd-02-ul"><a href="#">Костюм</a><a href="#">Пиджак</a><a href="#">Сорочка</a><a href="#">Пальто</a><a href="#">Брюки</a><a href="#">Жилетка</a></ul>
+          </div><a class="mob__menu-item" href="#">Обувь</a><a class="mob__menu-item" href="#">Аксессуары</a><a class="mob__menu-item" href="#">Подарочные сертификаты</a>
+          <div class="mob__menu-title mob__menu-item-contacts">Контакты</div><a class="mob__menu-item mob__menu-item-contacts" href="tel:74993908007"><i class="fa fa-phone"></i><span>8 (499) 390-80-07</span></a>
+          <div class="mob__menu-item mob__menu-item-contacts"><span class="callback">Обратный звонок</span></div>
+          <div class="mob__menu-item-location mob__menu-item-contacts"><i class="fa fa-location-arrow"></i><span>Регион:</span><span class="location-button">Москва</span><i class="fa fa-angle-down" id="location-arrow2"></i></div>
+          <div class="mob__menu-item mob__menu-item-contacts"><a href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V30H15.9768V18.4116H12.0712V13.6809H15.9768V9.70798C15.9768 6.81858 18.3191 4.47627 21.2085 4.47627H25.2916V8.73024H22.37C21.4518 8.73024 20.7075 9.47456 20.7075 10.3927V13.681H25.2182L24.5948 18.4117H20.7075V30H30V0H0Z" fill="#AC646E"/></svg></a><a href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.1447 6.87671H9.85518C8.21302 6.87671 6.87671 8.21294 6.87671 9.8552V20.1447C6.87671 21.7872 8.21302 23.1235 9.85518 23.1235H20.1447C21.7871 23.1235 23.1234 21.7872 23.1234 20.1447V9.8552C23.1234 8.21303 21.7871 6.87671 20.1447 6.87671ZM14.9997 20.3484C12.0509 20.3484 9.65153 17.9489 9.65153 14.9998C9.65153 12.051 12.0509 9.65154 14.9997 9.65154C17.9489 9.65154 20.3483 12.051 20.3483 14.9998C20.3483 17.9489 17.9489 20.3484 14.9997 20.3484ZM20.5204 10.7575C19.8222 10.7575 19.2545 10.1898 19.2545 9.49207C19.2545 8.79424 19.8222 8.22654 20.5204 8.22654C21.2181 8.22654 21.7858 8.79424 21.7858 9.49207C21.7858 10.1899 21.2181 10.7575 20.5204 10.7575Z" fill="#AC646E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.9997 11.9119C13.2974 11.9119 11.9111 13.2975 11.9111 14.9998C11.9111 16.7028 13.2974 18.0887 14.9997 18.0887C16.7027 18.0887 18.088 16.7028 18.088 14.9998C18.088 13.2975 16.7027 11.9119 14.9997 11.9119Z" fill="#AC646E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V30H30V0H0ZM25.3833 20.1448C25.3833 23.0337 23.0337 25.3833 20.1448 25.3833H9.85525C6.96659 25.3833 4.6167 23.0337 4.6167 20.1448V9.85525C4.6167 6.96659 6.96659 4.6167 9.85525 4.6167H20.1448C23.0337 4.6167 25.3833 6.96659 25.3833 9.85525V20.1448Z" fill="#AC646E"/></svg></a><a href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V30H30V0H0ZM21.8826 16.7172L24.488 19.711C24.8211 20.0937 24.5492 20.6907 24.0418 20.6907H21.1016C20.637 20.6907 20.1895 20.5148 19.8493 20.1984L18.9786 19.3888C17.996 18.5291 17.5784 18.2342 17.1854 18.2342C16.7924 18.2342 16.6941 18.529 16.6941 19.2905C16.6941 20.0519 16.5467 20.6907 14.2869 20.6907C12.027 20.6907 10.2584 18.9958 8.26874 16.3675C6.2791 13.7392 5.3948 10.9143 5.3948 10.9143C5.28502 10.5608 5.54933 10.202 5.91959 10.202H8.27245C8.71997 10.202 9.12757 10.4606 9.31523 10.8669C9.50784 11.2839 9.83916 11.9273 10.4059 12.8794C11.2101 14.2304 11.9826 14.839 12.4202 15.0981C12.5832 15.1946 12.7886 15.0754 12.7886 14.886V11.6455C12.7886 11.2214 12.6355 10.8117 12.3572 10.4918L12.0255 10.1104C11.9397 10.0117 12.0098 9.85808 12.1405 9.85808H15.859C16.4288 9.85808 16.8907 10.3199 16.8907 10.8897V14.6582C16.8907 14.901 17.2058 14.996 17.3399 14.7937L20.0163 10.7602C20.2273 10.4422 20.5836 10.251 20.9652 10.251H24.1069C24.5362 10.251 24.7973 10.7238 24.5687 11.0873L21.7887 15.5058C21.5495 15.8862 21.5876 16.3782 21.8826 16.7172Z" fill="#AC646E"/></svg></a></div>
+        </div>
+      </section>
+      <section>
+        <div class="g-wrapper">
+          <div class="ordering">
+            <div class="ordering__title">
+              <div class="ordering__title-text">Оформление заказа</div>
+              <div class="ordering__title-cart"><a href="#">Перейти в корзину</a><i class="fa fa-shopping-cart"></i></div>
+            </div>
+            <form class="ordering__form" action="#">
+              <div class="ordering__form-title">Контактные данные</div>
+              <div class="ordering__form-input"><i class="fa fa-user"></i>
+                <input type="text" placeholder="Фамилия Имя Отчество*" required="required"/>
+              </div>
+              <div class="ordering__form-input"><i class="fa fa-phone"></i>
+                <input type="tel" placeholder="Номер телефона*" required="required"/>
+              </div>
+              <div class="ordering__form-input"><i class="fa fa-location-arrow"></i>
+                <input type="text" placeholder="Адрес*" required="required"/>
+              </div>
+              <div class="ordering__form-input"><i class="fa fa-at"></i>
+                <input type="text" placeholder="E-mail*" required="required"/>
+              </div>
+              <div class="ordering__form-radios">
+                <div class="ordering__form-radios-title">Оплата</div>
+                <div class="ordering__form-radios-input">
+                  <label>
+                    <input class="radio" type="radio" name="pay" value="Оплата картой при получении"/><span class="radio-custom"></span><span class="label">Оплата картой при получении</span>
+                  </label>
+                  <label>
+                    <input class="radio" type="radio" name="pay" value="Оплата наличными при получении"/><span class="radio-custom"></span><span class="label">Оплата наличными при получении</span>
+                  </label>
+                </div>
+              </div>
+              <div class="ordering__form-radios">
+                <div class="ordering__form-radios-title">Доставка</div>
+                <div class="ordering__form-radios-input">
+                  <label>
+                    <input class="radio" type="radio" name="delivery" value="Доставка по Москве"/><span class="radio-custom"></span><span class="label">Доставка по Москве</span>
+                  </label>
+                  <label>
+                    <input class="radio" type="radio" name="delivery" value="Доставка по Московской области"/><span class="radio-custom"></span><span class="label">Доставка по Московской области</span>
+                  </label>
+                  <label>
+                    <input class="radio" type="radio" name="delivery" value="Доставка по РФ"/><span class="radio-custom"></span><span class="label">Доставка по РФ</span>
+                  </label>
+                </div>
+              </div>
+              <div class="ordering__form-title">Состав заказа</div>
+              <div class="ordering__form-table">
+                <div class="ordering__form-table__titles">
+                  <div class="ordering__form-table__titles-title">Фото</div>
+                  <div class="ordering__form-table__titles-title">Наименование</div>
+                  <div class="ordering__form-table__titles-title">Количество</div>
+                  <div class="ordering__form-table__titles-title">Цена</div>
+                  <div class="ordering__form-table__titles-title">Сумма</div>
+                  <div class="ordering__form-table__titles-title"></div>
+                </div>
+                <div class="ordering__form-table__items">
+                  <div class="ordering__form-table__items-image" style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;"></div>
+                  <div class="ordering__form-table__items-title">Запонки Dalvey Admiralty</div>
+                  <div class="ordering__form-table__items-counts"><span class="ordering__form-table__items-counts__count" data-type="plus"><i class="fa fa-plus"></i></span>
+                    <input class="ordering__form-table__items-counts__count" type="text" value="1"/><span class="ordering__form-table__items-counts__count" data-type="minus"><i class="fa fa-minus"></i></span>
+                  </div>
+                  <div class="ordering__form-table__items-price">2 499 руб.</div>
+                  <div class="ordering__form-table__items-total">2 499 руб.</div>
+                  <div class="ordering__form-table__items-delete"><i class="fa fa-times"></i></div>
+                </div>
+                <div class="ordering__form-table__items">
+                  <div class="ordering__form-table__items-image" style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;"></div>
+                  <div class="ordering__form-table__items-title">Запонки Dalvey Admiralty</div>
+                  <div class="ordering__form-table__items-counts"><span class="ordering__form-table__items-counts__count" data-type="plus"><i class="fa fa-plus"></i></span>
+                    <input class="ordering__form-table__items-counts__count" type="text" value="1"/><span class="ordering__form-table__items-counts__count" data-type="minus"><i class="fa fa-minus"></i></span>
+                  </div>
+                  <div class="ordering__form-table__items-price">2 499 руб.</div>
+                  <div class="ordering__form-table__items-total">2 499 руб.</div>
+                  <div class="ordering__form-table__items-delete"><i class="fa fa-times"></i></div>
+                </div>
+                <div class="ordering__form-table__items">
+                  <div class="ordering__form-table__items-image" style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;"></div>
+                  <div class="ordering__form-table__items-title">Запонки Dalvey Admiralty</div>
+                  <div class="ordering__form-table__items-counts"><span class="ordering__form-table__items-counts__count" data-type="plus"><i class="fa fa-plus"></i></span>
+                    <input class="ordering__form-table__items-counts__count" type="text" value="1"/><span class="ordering__form-table__items-counts__count" data-type="minus"><i class="fa fa-minus"></i></span>
+                  </div>
+                  <div class="ordering__form-table__items-price">2 499 руб.</div>
+                  <div class="ordering__form-table__items-total">2 499 руб.</div>
+                  <div class="ordering__form-table__items-delete"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
+              <div class="ordering__form-title">Дополнительный коментарий</div>
+              <div class="ordering__form-input"><i class="fa fa-comment"></i>
+                <input type="text" placeholder="Сообщение к заказу"/>
+              </div>
+              <div class="ordering__form-footer">
+                <div class="ordering__form-footer-update">
+                  <button type="button"><i class="fa fa-refresh"></i><span>Обновить корзину</span></button>
+                </div>
+                <div class="ordering__form-footer-totals">
+                  <div class="ordering__form-footer-totals-total">Итого:<span>2 499 руб.</span></div>
+                  <div class="ordering__form-footer-totals-button">
+                    <button type="submit"><span>Оформить заказ</span></button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="popup-bg"></div>
+        <div class="popup">
+          <div class="popup__container">
+            <div class="popup__container-title">Обратный звонок</div>
+            <div class="popup__container-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 0.623307L19.3776 0L10 9.3766L0.622979 0L0 0.623307L9.37702 9.99982L0 19.3764L0.622979 20L10 10.6221L19.3776 20L20 19.3764L10.623 9.99982L20 0.623307Z" fill="#AC646E"/></svg><i class="fa fa-times"></i></div>
+            <div class="popup__container-separator"></div>
+            <form class="popup__container-form" action="#">
+              <div class="popup__container-form-input">
+                <input type="text" required="required" placeholder="Ваше имя"/><i class="fa fa-user"></i>
+              </div>
+              <div class="popup__container-form-input">
+                <input type="tel" required="required" placeholder="Номер телефона"/><i class="fa fa-phone"></i>
+              </div>
+              <button class="popup__container-form-button" type="submit">Позвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="popuplocation-bg"></div>
+        <div class="popuplocation">
+          <div class="popuplocation__container">
+            <div class="popuplocation__container-title">Где вы находитесь?</div>
+            <div class="popuplocation__container-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 0.623307L19.3776 0L10 9.3766L0.622979 0L0 0.623307L9.37702 9.99982L0 19.3764L0.622979 20L10 10.6221L19.3776 20L20 19.3764L10.623 9.99982L20 0.623307Z" fill="#AC646E"/></svg><i class="fa fa-times"></i></div>
+            <div class="popuplocation__container-separator"></div>
+            <div class="popuplocation__container-content">
+              <div class="popuplocation__container-content-item"><i class="fa fa-check"></i><span>Москва</span></div>
+              <div class="popuplocation__container-content-item"><i class="fa fa-check"></i><span>Санкт-Петербург</span></div>
+              <div class="popuplocation__container-content-item"><i class="fa fa-check"></i><span>Самара</span></div>
+              <div class="popuplocation__container-content-item"><i class="fa fa-check"></i><span>Новороссийск</span></div>
+              <div class="popuplocation__container-content-item"><i class="fa fa-check"></i><span>Ярославль</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-bg">
+          <div class="g-wrapper">
+            <div class="footer">
+              <div class="footer__item">
+                <div class="footer__item-title">Компания</div><a class="footer__item-text" href="#">О компании</a><a class="footer__item-text" href="#">Миссия</a><a class="footer__item-text" href="#">История бренда</a><a class="footer__item-text" href="#">Партнеры бренда</a>
+              </div>
+              <div class="footer__item">
+                <div class="footer__item-title">Сервис</div><a class="footer__item-text" href="#">Выездной сервис</a><a class="footer__item-text" href="#">Политика привелегий</a><a class="footer__item-text" href="#">Корпоративным клиентами</a><a class="footer__item-text" href="#">Партнерская программа</a>
+              </div>
+              <div class="footer__item">
+                <div class="footer__item-title">Контакты</div>
+                <div class="footer__item-text"><i class="fa fa-phone"></i><a class="footer__item-text-link" href="tel:74993908007" id="footer-phone1">+7 (499) 390-80-07</a><a class="footer__item-text-link" href="tel:74950033423" id="footer-phone2">+7 (495) 003-34-23</a></div>
+                <div class="footer__item-text"><i class="fa fa-location-arrow"></i>
+                  <div class="footer__item-text-link" id="footer-address">Москва, Гончарная ул., 21 (м. Таганская)</div>
+                </div>
+              </div>
+              <div class="footer__item">
+                <div class="footer__item-title">Соц. Сети</div>
+                <div class="footer__item-social"><a href="#"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none"><style>.a{fill:#AC646E;}</style><path d="M0 0V40H40V0H0ZM37.5 37.5H2.5V2.5H37.5V37.5Z" class="a"/><path d="M26.4 7H13.6C10 7 7 10 7 13.6V26.4C7 30.1 10 33 13.6 33H26.4C30 33 33 30.1 33 26.4V13.6C33 10 30 7 26.4 7ZM30.2 26.4C30.2 28.5 28.5 30.2 26.4 30.2H13.6C11.5 30.2 9.8 28.5 9.8 26.4V13.6C9.8 11.5 11.5 9.8 13.6 9.8H26.4C28.5 9.8 30.2 11.5 30.2 13.6V26.4Z" class="a"/><path d="M26.9 14.7C26 14.7 25.3 14 25.3 13.1 25.3 12.2 26 11.5 26.9 11.5 27.8 11.5 28.5 12.2 28.5 13.1 28.5 14 27.8 14.7 26.9 14.7Z" class="a"/><path d="M20 13.3C16.3 13.3 13.3 16.3 13.3 20 13.3 23.7 16.3 26.7 20 26.7 23.7 26.7 26.7 23.7 26.7 20 26.7 16.3 23.7 13.3 20 13.3ZM20 23.9C17.9 23.9 16.1 22.1 16.1 20 16.1 17.9 17.9 16.1 20 16.1 22.1 16.1 23.9 17.9 23.9 20 23.9 22.1 22.1 23.9 20 23.9Z" class="a"/></svg></a><a href="#"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none"><style>.a{fill:#AC646E;}</style><path d="M16.6 33H21.9V20H25.6C25.6 20 25.9 17.9 26.1 15.6H22V12.6C22 12.2 22.5 11.6 23.1 11.6H26.1V7H22.1C16.4 7 16.6 11.4 16.6 12V15.6H13.9V20H16.6V33H16.6Z" class="a"/><path d="M0 0V40H40V0H0ZM37.5 37.5H2.5V2.5H37.5V37.5Z" class="a"/></svg></a><a href="#"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none"><style>.a{fill:#AC646E;}</style><path d="M11.9 22.8C12.9 24.1 14.1 25.3 15.6 26.2 17.3 27.1 19.1 27.4 21 27.3 21.9 27.3 22.2 27.1 22.2 26.2 22.2 25.6 22.3 24.9 22.6 24.4 22.9 23.9 23.3 23.8 23.9 24.1 24.1 24.3 24.3 24.5 24.5 24.7 25 25.3 25.5 25.8 26.1 26.4 26.7 27 27.5 27.4 28.5 27.3L32.2 27.3C32.9 27.3 33.2 26.6 32.8 25.9 32.6 25.4 32.3 25 31.9 24.6 31.1 23.6 30.2 22.8 29.4 22 28.6 21.2 28.5 20.8 29.2 19.9 29.8 19 30.6 18.1 31.3 17.1 31.9 16.2 32.6 15.3 32.9 14.3 33.1 13.6 32.9 13.3 32.2 13.2 32.1 13.1 32 13.1 31.9 13.1L27.8 13.1C27.2 13.1 27 13.4 26.8 13.8 26.5 14.4 26.3 15 26 15.6 25.4 16.9 24.6 18.2 23.6 19.3 23.4 19.5 23.1 19.9 22.7 19.7 22.3 19.6 22.1 18.8 22.1 18.5L22.1 13.8C22 13.1 21.9 12.8 21.2 12.6H16.9C16.4 12.6 16.1 12.9 15.8 13.2 15.6 13.4 15.6 13.6 15.9 13.6 16.6 13.8 17 14.2 17.1 14.9 17.3 16.1 17.3 17.2 17.2 18.4 17.2 18.7 17.1 19 17 19.3 16.8 19.8 16.4 19.9 16 19.6 15.6 19.4 15.3 19 15 18.6 14 17.1 13.2 15.6 12.5 13.9 12.3 13.5 12 13.2 11.5 13.2 10.3 13.1 9 13.1 7.8 13.2 7.1 13.2 6.8 13.5 7.1 14.2 8.5 17.2 10 20.1 11.9 22.8Z" class="a"/><path d="M0 0V40H40V0H0ZM37.5 37.5H2.5V2.5H37.5V37.5Z" class="a"/></svg></a></div>
+                <div class="footer__item-copy">© 2018 Aurora Carne. Все права защищены.</div><a class="footer__item-link" href="#">Карта сайта</a>
+              </div>
+              <div class="footer__copy">© 2018 Aurora Carne. Все права защищены.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

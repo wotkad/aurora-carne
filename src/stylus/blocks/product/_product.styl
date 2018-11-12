@@ -1,0 +1,257 @@
+.product
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	&__title
+		display flex
+		justify-content space-between
+		align-items center
+		flex-basis 100%
+		color $black
+		font-size 2rem
+		font-family $Light
+		line-height 39px
+		margin 40px 0 30px
+		&-text
+			color $black
+			font-size 2rem
+			font-family $Light
+			line-height 39px
+			margin 40px 0 30px
+			flex-basis 50%
+			display flex
+			flex-wrap wrap
+			span
+				&:nth-child(1)
+					border-bottom 1px solid $black
+				&:nth-child(2)
+					margin 0 10px
+		&-cart
+			justify-content flex-end
+			display flex
+			align-items center
+			flex-basis 50%
+			i
+				color $red
+				font-size 2rem
+			a
+				font-size 1.25rem
+				font-family $Light
+				color $black
+				margin-right 5px
+				border-bottom 1px solid $red
+				transition .3s
+				&:hover
+					color $red
+	&__block
+		border 1px solid #E9E9E9
+		margin-bottom 10px
+		display flex
+		flex-wrap wrap
+		padding 25px 30px
+		&:nth-child(2)
+			max-width 58%
+			ul
+				list-style none outside none
+				padding-left 0
+				margin-bottom 0
+			li
+				display block
+				border none
+				float left
+				display flex
+				align-items center
+				justify-content center
+				margin-right 6px
+				cursor pointer
+				a
+					display flex
+					justify-content center
+					img
+						height 100%
+						padding 5px
+			img
+				display block
+				height 100%
+				height auto
+				max-width 100%
+		&-title
+			font-size 0.75rem
+			font-family $Regular
+			color $footertitle
+			letter-spacing 1px
+			line-height 14px
+			margin-bottom 5px
+			flex-basis 50%
+			&:nth-child(1)
+				flex-basis 100%
+			&:nth-child(11)
+				flex-basis 100%
+		&-text
+			font-family $Light
+			font-size 1.125rem
+			line-height 22px
+			color $black
+			margin-bottom 20px
+			flex-basis 50%
+			&:nth-child(2)
+				flex-basis 100%
+			&:nth-child(12)
+				flex-basis 100%
+		&-info
+			display flex
+			flex-basis 100%
+			flex-wrap wrap
+			&__title
+				flex-basis 50%
+				font-size 0.75rem
+				font-family $Regular
+				color $footertitle
+				letter-spacing 1px
+				line-height 14px
+				margin-bottom 5px
+			&__price
+				flex-basis 50%
+				font-family $Light
+				font-size 1.125rem
+				line-height 22px
+				color $black
+				margin-bottom 20px
+			&__instock
+				flex-basis 50%
+				font-family $Light
+				font-size 1.125rem
+				line-height 22px
+				color #2E9C32
+				margin-bottom 20px
+			&-button
+				flex-basis 100%
+				button
+					border none
+					width 100%
+					cursor pointer
+					padding 12px
+					font-size 0.875rem
+					background-color $red
+					border 1px solid $red
+					color $white
+					transition .3s
+					&:hover
+						color $red
+						background-color $white
+		&:nth-child(2)
+			flex-basis 58%
+		&:nth-child(3)
+			flex-basis 40%
+	&__relatedslider
+		position relative
+		width 100%
+		margin-bottom 60px
+		&-slide
+			border 1px solid #E9E9E9
+			display flex
+			flex-wrap wrap
+			&-image
+				height 202px
+				flex-basis 100%
+				width 100%
+				margin-bottom 20px
+			&-title
+				flex-basis 100%
+				font-family $Light
+				font-size 1.125rem
+				line-height 27px
+				color $black
+				margin 0 15px 15px 15px
+			&-prop
+				flex-basis calc(50% - 15px)
+				font-size 0.75rem
+				line-height 15px
+				margin 0 15px 15px 15px
+				font-family $Light
+				color $textgray
+				display flex
+				align-items center
+				&:nth-child(3)
+					margin-right 0
+				&:nth-child(4)
+					margin-left 0
+				span
+					padding-left 5px
+					color $black
+				.color-product
+					margin-left 5px
+					border-radius 50%
+					background-color $black
+					width 11px
+					height 11px
+					display inline-block
+			&-footer
+				border-top 1px solid #E9E9E9
+				width 100%
+				display flex
+				padding 20px 30px
+				justify-content space-between
+				&__item
+					color $red
+					font-family $Light
+					font-size 1.125rem
+					line-height 27px
+					flex-basis 50%
+					button
+						color $red
+						font-family $Light
+						font-size 0.875rem
+						line-height 17px
+						letter-spacing .7px
+						background-color $white
+						border 1px solid $red
+						padding 7px 17px
+						width 100%
+						transition .3s
+						cursor pointer
+						&:hover
+							background-color $red
+							color $white
+.lslide
+	display flex !important
+	justify-content center
+.product__block:nth-child(2)
+	li.lslide.active
+		border none
+		height auto
+		opacity 1
+	li
+		img
+			padding 0
+.lSSlideOuter .lSPager.lSGallery li
+	border 1px solid #E8E8E8
+	&.active
+		border 1px solid $red
+.lSSlideOuter .lSPager.lSGallery
+	display flex
+	justify-content center
+.lSPager > li:last-child
+	margin-right 0 !important
+.lSSlideOuter .lSPager.lSGallery li:hover
+	border-radius 0
+.lslide img
+	max-height 400px !important
+.lSSlideOuter .lSPager.lSGallery li.active
+	border-radius 0
+@media(max-width: 991px)
+	.product
+		&__title
+			flex-wrap wrap
+			&-text
+				flex-basis 100%
+			&-cart
+				flex-basis 100%
+				justify-content flex-start
+				margin-bottom 30px
+		&__block
+			&:nth-child(2)
+				max-width 100%
+				flex-basis 100%
+			&:nth-child(3)
+				flex-basis 100%

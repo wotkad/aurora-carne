@@ -1,0 +1,297 @@
+.lookbook {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.lookbook__caption {
+  display: none;
+}
+.lookbook__caption-close {
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.lookbook__caption-close i {
+  color: $white;
+  margin-top: -3px;
+  font-size: 2rem;
+}
+.lookbook__caption-close span {
+  display: none;
+}
+.lookbook__caption-desc {
+  margin: 100px 40px 40px 40px;
+}
+.lookbook__caption-desc-title {
+  color: $black;
+  font-size: 1.5rem;
+  line-height: 36px;
+  font-family: $Regular;
+  margin-bottom: 31px;
+  text-align: left;
+}
+.lookbook__caption-desc-smalltitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 9px;
+}
+.lookbook__caption-desc-smalltitle span {
+  color: $footertitle;
+  font-size: 0.75rem;
+  line-height: 14px;
+  letter-spacing: 1px;
+  font-family: $Regular;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+.lookbook__caption-desc-text {
+  color: $textblack;
+  font-family: $Light;
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 21px;
+}
+.lookbook__title {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  color: $red;
+  font-size: 2rem;
+  font-family: $Light;
+  line-height: 39px;
+  margin: 40px 0 30px;
+}
+.lookbook__blocks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.lookbook__blocks-block {
+  -webkit-flex-basis: -webkit-calc(25% - 15px);
+      -ms-flex-preferred-size: calc(25% - 15px);
+          flex-basis: calc(25% - 15px);
+  margin-bottom: 15px;
+  height: 560px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.lookbook__blocks-block img {
+  display: none;
+}
+.lookbook__blocks-block:nth-child(4n) {
+  margin-right: 0;
+}
+.lookbook__button {
+  margin: 40px 0 60px;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.lookbook__button button {
+  background-color: $white;
+  padding: 25px;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 29px;
+  border: 1px solid $red;
+  font-family: $Light;
+  color: $red;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.lookbook__button button i {
+  margin-right: 5px;
+  color: $red;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: -3px;
+}
+.lookbook__button button:hover {
+  color: $white;
+  background-color: $red;
+}
+.lookbook__button:hover i {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: $white;
+}
+#look .lg-outer .lg-img-wrap {
+  padding: 20px;
+}
+.lg-backdrop {
+  background-color: rgba(0,0,0,0.5);
+}
+#look .lg-sub-html {
+  width: 400px;
+  background-color: $white;
+  z-index: 100;
+  left: auto;
+  height: 100%;
+  position: absolute;
+  right: -400px;
+  overflow: hidden;
+  top: 0;
+  padding: 0;
+  color: $black;
+}
+#look .lg-download,
+#look #lg-counter {
+  display: none;
+}
+#look .lg-toolbar {
+  background: $red;
+  width: 50px;
+  height: 50px;
+  left: auto;
+  top: 15px;
+  right: 15px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+#look .lg-backdrop {
+  background: rgba(0,0,0,0.6);
+}
+#look .lg-outer .lg-inner {
+  z-index: 1;
+}
+#look .lg-outer .lg {
+  overflow: visible;
+}
+#look .lg-outer,
+#look .lg-backdrop {
+  width: 100%;
+}
+#look .lg-actions .lg-next,
+#look .lg-actions .lg-prev {
+  top: -webkit-calc(50% - 20px);
+  color: $red;
+  top: calc(50% - 20px);
+  background-color: $white;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+          box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#look .lg-actions .lg-next:hover,
+#look .lg-actions .lg-prev:hover {
+  color: $white;
+  background-color: $red;
+}
+@media (max-width: 991px) {
+  .lookbook__blocks-block {
+    -webkit-flex-basis: -webkit-calc(50% - 15px);
+        -ms-flex-preferred-size: calc(50% - 15px);
+            flex-basis: calc(50% - 15px);
+    height: 400px;
+  }
+  .lookbook__button {
+    margin: 21px 0 26px;
+  }
+  .lookbook__button button {
+    padding: 12px;
+    line-height: 15px;
+    font-size: 0.75rem;
+  }
+  #look .lg-toolbar {
+    left: auto;
+    top: 15px;
+    right: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+  #look .lg-sub-html {
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -375px;
+    top: auto;
+    min-height: 375px;
+    height: 375px;
+  }
+}

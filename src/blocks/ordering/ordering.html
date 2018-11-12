@@ -1,0 +1,105 @@
+
+<div class="g-wrapper">
+  <div class="ordering">
+    <div class="ordering__title">
+      <div class="ordering__title-text">Оформление заказа</div>
+      <div class="ordering__title-cart"><a href="#">Перейти в корзину</a><i class="fa fa-shopping-cart"></i></div>
+    </div>
+    <form class="ordering__form" action="#">
+      <div class="ordering__form-title">Контактные данные</div>
+      <div class="ordering__form-input"><i class="fa fa-user"></i>
+        <input type="text" placeholder="Фамилия Имя Отчество*" required="required"/>
+      </div>
+      <div class="ordering__form-input"><i class="fa fa-phone"></i>
+        <input type="tel" placeholder="Номер телефона*" required="required"/>
+      </div>
+      <div class="ordering__form-input"><i class="fa fa-location-arrow"></i>
+        <input type="text" placeholder="Адрес*" required="required"/>
+      </div>
+      <div class="ordering__form-input"><i class="fa fa-at"></i>
+        <input type="text" placeholder="E-mail*" required="required"/>
+      </div>
+      <div class="ordering__form-radios">
+        <div class="ordering__form-radios-title">Оплата</div>
+        <div class="ordering__form-radios-input">
+          <label>
+            <input class="radio" type="radio" name="pay" value="Оплата картой при получении"/><span class="radio-custom"></span><span class="label">Оплата картой при получении</span>
+          </label>
+          <label>
+            <input class="radio" type="radio" name="pay" value="Оплата наличными при получении"/><span class="radio-custom"></span><span class="label">Оплата наличными при получении</span>
+          </label>
+        </div>
+      </div>
+      <div class="ordering__form-radios">
+        <div class="ordering__form-radios-title">Доставка</div>
+        <div class="ordering__form-radios-input">
+          <label>
+            <input class="radio" type="radio" name="delivery" value="Доставка по Москве"/><span class="radio-custom"></span><span class="label">Доставка по Москве</span>
+          </label>
+          <label>
+            <input class="radio" type="radio" name="delivery" value="Доставка по Московской области"/><span class="radio-custom"></span><span class="label">Доставка по Московской области</span>
+          </label>
+          <label>
+            <input class="radio" type="radio" name="delivery" value="Доставка по РФ"/><span class="radio-custom"></span><span class="label">Доставка по РФ</span>
+          </label>
+        </div>
+      </div>
+      <div class="ordering__form-title">Состав заказа</div>
+      <div class="ordering__form-table">
+        <div class="ordering__form-table__titles">
+          <div class="ordering__form-table__titles-title">Фото</div>
+          <div class="ordering__form-table__titles-title">Наименование</div>
+          <div class="ordering__form-table__titles-title">Количество</div>
+          <div class="ordering__form-table__titles-title">Цена</div>
+          <div class="ordering__form-table__titles-title">Сумма</div>
+          <div class="ordering__form-table__titles-title"></div>
+        </div>
+        <div class="ordering__form-table__items">
+          <div class="ordering__form-table__items-image" style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;"></div>
+          <div class="ordering__form-table__items-title">Запонки Dalvey Admiralty</div>
+          <div class="ordering__form-table__items-counts"><span class="ordering__form-table__items-counts__count" data-type="plus"><i class="fa fa-plus"></i></span>
+            <input class="ordering__form-table__items-counts__count" type="text" value="1"/><span class="ordering__form-table__items-counts__count" data-type="minus"><i class="fa fa-minus"></i></span>
+          </div>
+          <div class="ordering__form-table__items-price">2 499 руб.</div>
+          <div class="ordering__form-table__items-total">2 499 руб.</div>
+          <div class="ordering__form-table__items-delete"><i class="fa fa-times"></i></div>
+        </div>
+        <div class="ordering__form-table__items">
+          <div class="ordering__form-table__items-image" style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;"></div>
+          <div class="ordering__form-table__items-title">Запонки Dalvey Admiralty</div>
+          <div class="ordering__form-table__items-counts"><span class="ordering__form-table__items-counts__count" data-type="plus"><i class="fa fa-plus"></i></span>
+            <input class="ordering__form-table__items-counts__count" type="text" value="1"/><span class="ordering__form-table__items-counts__count" data-type="minus"><i class="fa fa-minus"></i></span>
+          </div>
+          <div class="ordering__form-table__items-price">2 499 руб.</div>
+          <div class="ordering__form-table__items-total">2 499 руб.</div>
+          <div class="ordering__form-table__items-delete"><i class="fa fa-times"></i></div>
+        </div>
+        <div class="ordering__form-table__items">
+          <div class="ordering__form-table__items-image" style="background: url(/images/product.jpg) 15% 50% no-repeat; background-size: contain;"></div>
+          <div class="ordering__form-table__items-title">Запонки Dalvey Admiralty</div>
+          <div class="ordering__form-table__items-counts"><span class="ordering__form-table__items-counts__count" data-type="plus"><i class="fa fa-plus"></i></span>
+            <input class="ordering__form-table__items-counts__count" type="text" value="1"/><span class="ordering__form-table__items-counts__count" data-type="minus"><i class="fa fa-minus"></i></span>
+          </div>
+          <div class="ordering__form-table__items-price">2 499 руб.</div>
+          <div class="ordering__form-table__items-total">2 499 руб.</div>
+          <div class="ordering__form-table__items-delete"><i class="fa fa-times"></i></div>
+        </div>
+      </div>
+      <div class="ordering__form-title">Дополнительный коментарий</div>
+      <div class="ordering__form-input"><i class="fa fa-comment"></i>
+        <input type="text" placeholder="Сообщение к заказу"/>
+      </div>
+      <div class="ordering__form-footer">
+        <div class="ordering__form-footer-update">
+          <button type="button"><i class="fa fa-refresh"></i><span>Обновить корзину</span></button>
+        </div>
+        <div class="ordering__form-footer-totals">
+          <div class="ordering__form-footer-totals-total">Итого:<span>2 499 руб.</span></div>
+          <div class="ordering__form-footer-totals-button">
+            <button type="submit"><span>Оформить заказ</span></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

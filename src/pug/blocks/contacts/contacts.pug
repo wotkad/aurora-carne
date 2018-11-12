@@ -1,0 +1,46 @@
+.g-wrapper
+	.contacts
+		.contacts__title Контакты
+		.contacts__block
+			.contacts__block-title#contacts-button
+				p Адрес в
+				span г.
+				span#contacts-city Санкт-Петербург
+				i.fa.fa-angle-down#contacts-arrow
+				.contacts__block-title__menu
+					.contacts__block-title__menu-item Москва
+					.contacts__block-title__menu-item Самара
+					.contacts__block-title__menu-item Ярославль
+					.contacts__block-title__menu-item Санкт-Петербург
+					.contacts__block-title__menu-item Новороссийск
+			.contacts__block-smalltitle Телефон
+			a(href="tel:78126451433").contacts__block-text#contacts-phone +7 (812) 645-14-33
+			.contacts__block-smalltitle E-mail
+			a(href="mailto:spb@aurora-carne.ru").contacts__block-text#contacts-email spb@aurora-carne.ru
+			.contacts__block-smalltitle Адрес
+			.contacts__block-text Санкт-Петербург, Басков пер., 35
+			.contacts__block-smalltitle Время работы
+			.contacts__block-text Ежедневно, 10:00 — 21:00
+			.contacts__block-smalltitle Принимаем
+			.contacts__block-text
+				img(src="/images/carts.jpg")
+			.contacts__block-desc Пожалуйста, согласовывайте свои визиты по телефону, прием осуществляется по записи
+		.contacts__block
+			.contacts__block-title
+				p Фотографии офиса
+			.contacts__block-slider
+				.swiper-container.slider5
+					.swiper-wrapper
+						.swiper-slide
+							.contacts__block-slider-slide(style="background: url(/images/contacts-slide.jpg) 50% 50% no-repeat; background-size: cover;")
+						.swiper-slide
+							.contacts__block-slider-slide(style="background: url(/images/contacts-slide.jpg) 50% 50% no-repeat; background-size: cover;")
+						.swiper-slide
+							.contacts__block-slider-slide(style="background: url(/images/contacts-slide.jpg) 50% 50% no-repeat; background-size: cover;")
+				.swiper-button-prev
+					i.fa.fa-arrow-left
+				.swiper-button-next
+					i.fa.fa-arrow-right
+		.contacts__title Карта присутствия
+		.contacts__map
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9a9a8336774b304269d3cc82332035943f3219f1e9bad4492e18d69d6b5ace0d&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>

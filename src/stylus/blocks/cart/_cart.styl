@@ -1,0 +1,321 @@
+.cart
+	display flex
+	flex-wrap wrap
+	&__title
+		display flex
+		justify-content space-between
+		align-items center
+		flex-basis 100%
+		&-text
+			flex-basis 50%
+			color $black
+			font-size 2rem
+			font-family $Light
+			line-height 39px
+			margin 40px 0 30px
+		&-cart
+			justify-content flex-end
+			display flex
+			align-items center
+			flex-basis 50%
+			i
+				color $red
+				font-size 2rem
+			a
+				font-size 1.25rem
+				font-family $Light
+				color $black
+				margin-right 5px
+				border-bottom 1px solid $red
+				transition .3s
+				&:hover
+					color $red
+	&__form
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		width 100%
+		input
+			border none
+			width 100%
+			font-family $Thin
+			font-size 0.875rem
+			padding 15px 35px
+		&-radios
+			flex-basis 50%
+			margin-bottom 46px
+			&-title
+				color $textblack
+				font-family $Thin
+				font-size 1.25rem
+				line-height 30px
+				margin-bottom 30px
+			&-input
+				display flex
+				font-family $Light
+				font-size 0.875rem
+				color $black
+				line-height 17px
+				label
+					&:nth-child(1)
+						.radio-custom
+							margin-left 0
+		&-title
+			color $textblack
+			font-family $Thin
+			font-size 1.25rem
+			line-height 30px
+			margin-bottom 30px
+			&:nth-child(1),
+			&:nth-child(13)
+				margin-bottom 30px
+				flex-basis 100%
+			&:nth-child(10)
+				margin-top 30px
+				flex-basis 100%
+		&-input
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5)
+				flex-basis 23%
+				border-bottom 1px solid #D1D1D1
+				display inline-block
+				position relative
+				margin-bottom 46px
+				i
+					color #E2E2E2
+					position absolute
+					left 12px
+					top calc(50% - 7px)
+			&:nth-child(10),
+			&:nth-child(11),
+			&:nth-child(12)
+				margin-bottom 30px
+				display flex
+				font-size 0.875rem
+				line-height 17px
+				font-family $Light
+				color $black
+				label
+					display flex
+					align-items center
+					.radio-custom
+						margin-left 0
+			&:nth-child(11)
+				flex-basis 100%
+				display inline-block
+				position relative
+				border-bottom 1px solid #D1D1D1
+				i
+					color #E2E2E2
+					position absolute
+					left 12px
+					top calc(50% - 10px)
+		&-table
+			flex-basis 100%
+			&__titles
+				display flex
+				border-bottom 1px solid #DCDCDC
+				&-title
+					color #959595
+					font-size 0.875rem
+					font-family $Light
+					line-height 21px
+					padding 12px 0
+					&:nth-child(1)
+						flex-basis 20%
+					&:nth-child(2)
+						flex-basis 30%
+					&:nth-child(3)
+						flex-basis 20%
+					&:nth-child(4),
+					&:nth-child(5)
+						flex-basis 17.5%
+					&:nth-child(6)
+						flex-basis 5%
+			&__items
+				border-bottom 1px solid #DCDCDC
+				padding 15px 0
+				display flex
+				align-items center
+				transition .3s
+				&:hover
+					background-color #F5F5F5
+				&-image
+					height 85px
+					width 130px
+					flex-basis 20%
+				&-title
+					flex-basis 30%
+					color $black
+					font-family $Light
+					line-height 27px
+					font-size 1.125rem
+				&-counts
+					flex-basis 20%
+					display flex
+					padding-right 10px
+					input
+						padding 0
+						width 50px
+						height 50px
+						text-align center
+						background-color #F6F6F6
+						border 1px solid #E1E1E1
+						font-size 1.125rem
+						line-height 27px
+						font-family $Light
+					span
+						width 50px
+						height 50px
+						display flex
+						align-items center
+						justify-content center
+						background-color #F6F6F6
+						cursor pointer
+						border 1px solid #E1E1E1
+						&:hover i
+							color $red
+						i
+							transition .3s
+							color #6E6E6E
+				&-price,
+				&-total
+					flex-basis 17.5%
+					color $black
+					font-family $Light
+					line-height 27px
+					font-size 1.125rem
+				&-delete
+					flex-basis 5%
+					i
+						color $red
+						cursor pointer
+						transition .3s
+						height 17px
+						&:hover
+							color #ccc
+							transform rotate(180deg)
+		&-footer
+			display flex
+			justify-content space-between
+			padding 65px 0
+			width 100%
+			&-update
+				button
+					border none
+					display flex
+					align-items center
+					justify-content center
+					border 1px solid $red
+					background-color $white
+					color $black
+					padding 8px 50px
+					font-family $Light
+					font-size 0.875rem
+					line-height 17px
+					letter-spacing .7px
+					cursor pointer
+					i
+						margin-right 5px
+						color $red
+						transition .3s
+						margin-top -3px
+				&:hover i
+					transform rotate(180deg)
+			&-totals
+				display flex
+				&-total
+					font-family $Medium
+					font-size 1.125rem
+					line-height 27px
+					color $black
+					padding 8px 40px
+					span
+						margin-left 3px
+				&-button
+					button
+						border none
+						border 1px solid $red
+						background-color $red
+						color $white
+						padding 8px 50px
+						font-family $Medium
+						font-size 0.875rem
+						line-height 17px
+						letter-spacing .7px
+						transition .3s
+						cursor pointer
+					&:hover button
+						background-color $white
+						color $red
+						border 1px solid $red
+@media(max-width 991px)
+	.cart
+		&__title
+			flex-wrap wrap
+			&-text
+				flex-basis 100%
+			&-cart
+				flex-basis 100%
+				justify-content flex-start
+				margin-bottom 30px
+		&__form
+			&-input
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5)
+					flex-basis 48%
+			&-radios
+				flex-basis 50%
+				&-input
+					flex-direction column
+					label
+						.radio-custom
+							margin-left 0px
+			&-title
+				&:nth-child(8)
+					border-bottom 1px solid #DCDCDC
+					flex-basis 100%
+					margin-bottom 0
+			&-table
+				&__titles
+					display none
+				&__items
+					&:nth-child(2)
+						border-top 1px solid #DCDCDC
+					&-price
+						display none
+			&-footer
+				flex-direction column
+				align-items center
+				padding 30px 0
+				&-totals
+					flex-direction column
+@media(max-width 767px)
+	.cart
+		&__form
+			&-input
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5)
+					flex-basis 100%
+			&-radios
+				flex-basis 100%
+			&-table
+				&__items
+					flex-wrap wrap
+					padding 10px
+					&-image
+						flex-basis 50%
+						margin-bottom 10px
+					&-title
+						flex-basis 50%
+						margin-bottom 10px
+					&-counts
+						flex-basis 50%
+					&-total
+						flex-basis 30%

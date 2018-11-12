@@ -1,0 +1,120 @@
+.popuplocation-bg
+	background-color rgba(0,0,0,.6)
+	position fixed
+	top 0
+	bottom 0
+	left 0
+	right 0
+	z-index 9998
+	opacity 1
+	transition .3s
+	cursor pointer
+.popuplocation
+	position fixed
+	width 461px
+	height 275px
+	left calc(50% - 230.5px)
+	top calc(50% - 137.5px)
+	border 1px solid $white
+	padding 20px
+	z-index 9999
+	opacity 1
+	transition .3s
+	&__container
+		background-color $white
+		height 100%
+		padding 30px 42px 54px 35px
+		position relative
+		&-title
+			font-family $Light
+			color $black
+			line-height 29px
+			font-size 1.5rem
+			position relative
+		&-separator
+			width 33.33334%
+			height 2px
+			background-color $red
+			margin-top 15px
+			margin-bottom 29px
+		&-close
+			position absolute
+			right 42px
+			top 42px
+			cursor pointer
+			&:hover svg
+				path
+					fill $black
+			svg
+				path
+					fill $red
+					transition .3s
+			i
+				display none
+		&-content
+			display flex
+			flex-wrap wrap
+			&-item
+				flex-basis 50%
+				font-family $Thin
+				line-height 22px
+				font-size 1.125rem
+				margin-bottom 18px
+				transition .3s
+				cursor pointer
+				overflow hidden
+				position relative
+				&:hover
+					color $red
+				&:hover i
+					transform scale(1)
+				span
+					transition .3s
+				&:hover span
+					padding-left 20px
+				i
+					position absolute
+					transform scale(0)
+					transition .2s
+					margin-right 3px
+					color $red
+.popuplocation__active
+	z-index -1
+	opacity 0
+	transition .3s
+	position fixed
+@media(max-width: 650px)
+	.popuplocation
+		width calc(100% - 50px)
+		left auto
+		margin 25px
+		padding 0
+		height 330px
+		top calc(50% - 185px)
+		&__container
+			&-content
+				&-item
+					flex-basis 100%
+			&-title
+				text-align center
+			&-separator
+				margin-left 33.33334%
+			&-close
+				border-radius 50%
+				background $red
+				width 50px
+				height 50px
+				right -25px
+				top -25px
+				display flex
+				align-items center
+				justify-content center
+				svg
+					display none
+				i
+					display block
+					color $white
+					font-size 23px
+					transition .3s
+				&:hover i
+					color $black

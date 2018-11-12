@@ -1,0 +1,72 @@
+.g-wrapper
+	.sertificate
+		.sertificate__title Подарочный сертификат
+		.sertificate__text Подарочный сертификат на услуги индивидуального пошива – роскошный и всегда актуальный подарок для успешных и деловых мужчин и женщин. Для многих людей выбор одежды сопряжен с большими трудностями и временными затратами на поиски подходящего костюма, сорочки, пальто или обуви, поскольку размерный ряд не учитывает все особенности фигуры, а выбор дизайна крайне ограничен. В случае подарочного сертификата Вы дарите не только то, что в будущем человек будет с удовольствием носить, но также и удовольствие от процесса заказа, поскольку сервис Aurora Carne находится на самом высоком уровне.
+		.sertificate__image
+			img(src="/images/sertificate.jpg")
+		.sertificate__block
+			.sertificate__block-image(style="background: url(/images/sertif1.jpg) 50% 50% no-repeat; background-size: cover;")
+			.sertificate__block-title Сертификат на пошив сорочки
+			.sertificate__block-separator
+			.sertificate__block-text
+				p Возможный
+				span номинал
+				p  — 10 000 руб.
+		.sertificate__block
+			.sertificate__block-image(style="background: url(/images/sertif2.jpg) 50% 50% no-repeat; background-size: cover;")
+			.sertificate__block-title Сертификат на пошив костюма
+			.sertificate__block-separator
+			.sertificate__block-text
+				span Бизнес
+				p — 40 000 руб.
+			.sertificate__block-text
+				span Премиум
+				p — 60 000 руб.
+			.sertificate__block-text
+				span VIP
+				p — 90 000 руб.
+		.sertificate__block
+			.sertificate__block-image(style="background: url(/images/sertif3.jpg) 50% 50% no-repeat; background-size: cover;")
+			.sertificate__block-title Сертификат на обувь ручной работы
+			.sertificate__block-separator
+			.sertificate__block-text
+				p Возможный
+				span номинал
+				p  — 30 000 руб.
+		.sertificate__infoblock
+			.sertificate__infoblock-title Сертификат на свободный номинал
+			.sertificate__infoblock-separator
+			.sertificate__infoblock-text Также возможен подарочный сертификат на любую сумму и услугу.
+		.sertificate__formsertif
+			.sertificate__formsertif-block
+				.sertificate__formsertif-block__title Заказ подарочного сертификата
+				.sertificate__formsertif-block__separator
+				.sertificate__formsertif-block__text
+					p Вы можете заказать подарочный сертификат, воспользовавшись формой ниже. После отправки заполненной формы Вам перезвонят по указанному номеру и уточнят все детали Вашего заказа. В настоящий момент подарочный сертификат Вы можете заказать в следующих городах:
+						span Москва, Санкт-Петербург, Самара, Новороссийск, Уфа.
+					p Доставка по Москве в пределах МКАД - бесплатно.
+			.sertificate__formsertif-block
+				form(action="#").sertificate__formsertif-block__form
+					.sertificate__formsertif-block__form-input
+						input(type="text" placeholder="Сумма сертификата*" required="required")
+					.sertificate__formsertif-block__form-input
+						input(type="text" placeholder="ФИО получателя*" required="required")
+					.sertificate__formsertif-block__form-input
+						input(type="text" placeholder="Ваше имя*" required="required")
+					.sertificate__formsertif-block__form-input
+						input(type="tel" placeholder="Ваш телефон*" required="required")
+					.sertificate__formsertif-block__form-input
+						input(type="text" placeholder="Адрес или комментарий" required="required")
+					.sertificate__formsertif-block__form-input
+						label
+							input.radio(type="radio" name="sertif" value="Самовывоз")
+							span.radio-custom
+							span.label Самовывоз
+						label
+							input.radio(type="radio" name="sertif" value="Доставка")
+							span.radio-custom
+							span.label Доставка
+					button(type="submit").sertificate__formsertif-block__form-button Заказать
+					.sertificate__formsertif-block__form-policy
+						p Нажимая кнопку «Записаться» вы даете свое согласие на
+						a(href="#") политику обработки персональных данных.

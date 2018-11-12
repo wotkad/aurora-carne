@@ -1,0 +1,16 @@
+.popup-bg
+.popup
+	.popup__container
+		.popup__container-title Обратный звонок
+		.popup__container-close
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 0.623307L19.3776 0L10 9.3766L0.622979 0L0 0.623307L9.37702 9.99982L0 19.3764L0.622979 20L10 10.6221L19.3776 20L20 19.3764L10.623 9.99982L20 0.623307Z" fill="#AC646E"/></svg>
+			i.fa.fa-times
+		.popup__container-separator
+		form(action="#").popup__container-form
+			.popup__container-form-input
+				input(type="text" required="required" placeholder="Ваше имя")
+				i.fa.fa-user
+			.popup__container-form-input
+				input(type="tel" required="required" placeholder="Номер телефона")
+				i.fa.fa-phone
+			button(type="submit").popup__container-form-button Позвоните мне

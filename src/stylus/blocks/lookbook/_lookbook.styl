@@ -1,0 +1,179 @@
+.lookbook
+	display flex
+	flex-wrap wrap
+	&__caption
+		display none
+		&-close
+			height 60px
+			display flex
+			align-items center
+			justify-content center
+			cursor pointer
+			i
+				color $white
+				margin-top -3px
+				font-size 2rem
+			span
+				display none
+		&-desc
+			margin 100px 40px 40px 40px
+			&-title
+				color $black
+				font-size 1.5rem
+				line-height 36px
+				font-family $Regular
+				margin-bottom 31px
+				text-align left
+			&-smalltitle
+				display flex
+				align-items center
+				margin-bottom 9px
+				span
+					color $footertitle
+					font-size 0.75rem
+					line-height 14px
+					letter-spacing 1px
+					font-family $Regular
+					text-transform uppercase
+					margin-left 8px
+			&-text
+				color $textblack
+				font-family $Light
+				font-size 1.25rem
+				line-height 30px
+				text-align left
+				margin-bottom 21px
+	&__title
+		flex-basis 100%
+		color $red
+		font-size 2rem
+		font-family $Light
+		line-height 39px
+		margin 40px 0 30px
+	&__blocks
+		display flex
+		flex-basis 100%
+		flex-wrap wrap
+		&-block
+			flex-basis calc(25% - 15px)
+			margin-bottom 15px
+			height 560px
+			margin-right 15px
+			cursor pointer
+			img
+				display none
+			&:nth-child(4n)
+				margin-right 0
+	&__button
+		margin 40px 0 60px
+		flex-basis 100%
+		button
+			background-color $white
+			padding 25px
+			width 100%
+			font-size 1.5rem
+			line-height 29px
+			border 1px solid $red
+			font-family $Light
+			color $red
+			display flex
+			align-items center
+			justify-content center
+			cursor pointer
+			transition .3s
+			i
+				margin-right 5px
+				color $red
+				transition .3s
+				margin-top -3px
+			&:hover
+				color $white
+				background-color $red
+		&:hover i
+			transform rotate(180deg)
+			color $white
+#look .lg-outer .lg-img-wrap
+	padding 20px
+.lg-backdrop
+	background-color rgba(0,0,0,.5)
+#look .lg-sub-html
+	width 400px
+	background-color $white
+	z-index 100
+	left auto
+	height 100%
+	position absolute
+	right -400px
+	overflow hidden
+	top 0
+	padding 0
+	color $black
+#look .lg-download,
+#look #lg-counter
+	display none
+#look .lg-toolbar
+	background $red
+	width 50px
+	height 50px
+	left auto
+	top 15px
+	right 15px
+	border-radius 50%
+	display flex
+	align-items center
+	justify-content center
+	cursor pointer
+#look .lg-backdrop
+	background rgba(0, 0, 0, 0.6)
+#look .lg-outer .lg-inner
+	z-index 1
+#look .lg-outer .lg
+	overflow visible
+#look .lg-outer,
+#look .lg-backdrop
+	width 100%
+#look .lg-actions .lg-next,
+#look .lg-actions .lg-prev
+	top -webkit-calc(50% - 20px)
+	color $red
+	top calc(50% - 20px)
+	background-color $white
+	border-radius 50%
+	width 50px
+	height 50px
+	display flex
+	align-items center
+	justify-content center
+	box-shadow 0px 0px 30px rgba(0,0,0,0.1)
+	transition 0.3s
+	&:hover
+		color $white
+		background-color $red
+@media(max-width 991px)
+	.lookbook
+		&__blocks
+			&-block
+				flex-basis calc(50% - 15px)
+				height 400px
+		&__button
+			margin 21px 0 26px
+			button
+				padding 12px
+				line-height 15px
+				font-size 0.75rem
+	#look .lg-toolbar
+		left auto
+		top 15px
+		right 15px
+		display flex
+		align-items center
+		justify-content center
+		cursor pointer
+	#look .lg-sub-html
+		width 100%
+		left 0
+		right 0
+		bottom -375px
+		top auto
+		min-height 375px
+		height 375px

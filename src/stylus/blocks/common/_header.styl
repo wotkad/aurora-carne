@@ -1,0 +1,454 @@
+.header
+	background-color $lightgray
+	border-bottom 1px solid #CCCCCC
+.top__menu
+	display flex
+	justify-content space-between
+	align-items center
+	height 70px
+.l__menu
+	display flex
+	&-item
+		margin-right 20px
+		font-family $Regular
+		font-size 0.875rem
+		line-height 17px
+		letter-spacing 1px
+		color $black
+		transition .3s
+		i
+			margin-right 8px
+			color $red
+		&:hover
+			color $red
+		&:nth-child(2)
+			color $red
+			transition .3s
+			border-bottom: 1px dashed $lightgray
+			&:hover
+				border-bottom: 1px dashed $red
+.r__menu
+	display flex
+	&-item
+		margin-left 20px
+		font-family $Regular
+		font-size 0.875rem
+		line-height 17px
+		letter-spacing 1px
+		color $black
+		transition .3s
+		i
+			margin-right 7px
+			color $red
+			&:last-child
+				margin-left 3px
+				transition .3s
+		&:hover
+			color $red
+		&:nth-child(1) span
+			&:nth-child(2)
+				color $textdarkgray
+			&:nth-child(3)
+				color $red
+				margin-left 3px
+				transition .3s
+				border-bottom: 1px dashed $lightgray
+				&:hover
+					border-bottom: 1px dashed $red
+		&-dropdown
+			flex-direction column
+			position absolute
+			border 1px solid #EAEAEA
+			border-bottom none
+			display none
+			transition .3s
+			top 52px
+			box-shadow 0 0 30px 4px rgba(0,0,0,.05);
+			&-link
+				transition .3s
+				font-size 1rem
+				color $textblack
+				font-family Thin
+				padding 15px 26px
+				min-width 200px
+				border-bottom 1px solid #EAEAEA
+				background-color $white
+				&:hover
+					color $red
+.callback
+	cursor pointer
+	color $red
+	transition .3s
+	border-bottom: 1px dashed $lightgray
+	&:hover
+		border-bottom: 1px dashed $red
+.header2
+	background-color $white
+	border-bottom 1px solid #EAEAEA
+.top2__menu
+	display flex
+	justify-content space-between
+	align-items center
+	height 70px
+	&-item
+		display flex
+		align-items center
+		img
+			width 142px
+		&:nth-child(1)
+			flex-basis 15%
+		&:nth-child(2)
+			flex-basis 65%
+		&-link
+			font-family $Light
+			font-size 1rem
+			line-height 19px
+			color $textblack
+			margin-right 30px
+			transition .3s
+			&:hover
+				color $red
+			i
+				margin-left 8px
+				transition .3s
+			a
+				transition .3s
+				&:hover
+					color $red
+			&:hover .top2__menu-item-dropdown,
+			&:hover .top2__menu-item-dropdown-link
+				opacity 1
+				z-index 99
+			&:hover i
+				transform rotate(180deg)
+		&-dropdown
+			display flex
+			flex-direction column
+			position absolute
+			border 1px solid #EAEAEA
+			border-bottom none
+			opacity 0
+			z-index -1
+			transition .3s
+			box-shadow 0 0 30px 4px rgba(0,0,0,.05);
+			&-link
+				transition .3s
+				font-size 1rem
+				color $textblack
+				font-family Thin
+				padding 15px 26px
+				min-width 200px
+				border-bottom 1px solid #EAEAEA
+				background-color $white
+				&:hover
+					color $red
+		&:nth-child(3)
+			flex-basis 20%
+			justify-content flex-end
+			align-items center
+			span
+				font-family $Light
+				font-size 1rem
+				line-height 19px
+				color $textlightgray
+				margin-right 9px
+		&-social
+			display flex
+			justify-content space-between
+			a
+				margin-left 10px
+				svg
+					width 30px
+					height 30px
+.active
+	display flex
+	z-index 123
+.mob__header
+	height 60px
+	display none
+	width 100%
+	justify-content center
+	align-items center
+	border-bottom 1px solid #EAEAEA
+	&-item
+		&:first-child
+			position absolute
+			left 10px
+			top -2px
+			&:hover .line
+				stroke $red
+			.ham
+				cursor pointer
+				-webkit-tap-highlight-color transparent
+				transition transform 400ms
+				-moz-user-select none
+				-webkit-user-select none
+				-ms-user-select none
+				user-select none
+			.hamRotate.active
+				transform rotate(45deg)
+			.hamRotate180.active
+				transform rotate(180deg)
+			.line
+				fill none
+				transition stroke-dasharray 400ms, stroke-dashoffset 400ms
+				stroke $black
+				stroke-width 2
+				stroke-linecap round
+				transition .3s
+			.ham4 .top
+				stroke-dasharray 40 121
+			.ham4 .bottom
+				stroke-dasharray 40 121
+			.ham4.active .middle
+				stroke $red
+			.ham4.active .top
+				stroke-dashoffset -68px
+				stroke $red
+			.ham4.active .bottom
+				stroke-dashoffset -68px
+				stroke $red
+		&:nth-child(2)
+			img
+				width 130px
+		&:last-child
+			position absolute
+			right 25px
+			&:hover svg path
+				fill $textblack
+		&:last-child svg path
+			transition .3s
+.mob__menu
+	display none
+	transition .3s
+	transform translateX(-100%)
+	&-item
+		padding 20px 0 20px 25px
+		font-family $Light
+		font-size 1.125rem
+		line-height 22px
+		color $textblack
+		transition .3s
+		border-bottom 1px solid $lightgray
+		position relative
+		i
+			margin-right 8px
+			color $red
+		.dd
+			position absolute
+			right 25px
+			top 24.5px
+			border 1px solid $red
+			border-radius 3px
+			padding 2px
+			width 20px
+			height 20px
+			&:hover
+				background-color $red
+		svg
+			cursor pointer
+			path
+				transition .3s
+			&:hover
+				path
+					fill $white
+		&:hover
+			color $red
+		&:nth-child(2)
+			color $red
+		&-contacts
+			svg
+				margin-right 25px
+		&:nth-child(14)
+			font-family $Medium
+			color $textdarkgray
+			transition .3s
+			&:hover
+				color $red
+		&-location
+			padding 20px 0 20px 25px
+			font-family $Medium
+			font-size 1.125rem
+			line-height 22px
+			text-transform uppercase
+			color $textdarkgray
+			span
+				color $textdarkgray
+				&:nth-child(3)
+					color $red
+					margin-left 3px
+					transition .3s
+					border-bottom: 1px dashed $lightgray
+					&:hover
+						cursor pointer
+						border-bottom: 1px dashed $red
+			i
+				color $red
+				&:first-child
+					margin-right 8px
+					margin-top -3px
+				&:last-child
+					margin-left 6px
+					margin-top -3px
+			svg
+				width 30px
+				height 30px
+		&-dropdown
+			padding 0
+			display flex
+			flex-wrap wrap;
+			& a
+				flex-basis 100%
+				min-height 62px
+				max-height 62px
+				display flex
+				align-items center
+				text-indent 25px
+				transition .3s
+				&:hover
+					color $red
+	.callback
+		span
+			cursor pointer
+			color $red
+			transition .3s
+			border-bottom: 1px dashed $lightgray
+			&:hover
+				border-bottom: 1px dashed $red
+	&-title
+		font-size 0.875rem
+		line-height 22px
+		font-family $Light
+		color #B8B8B8
+		padding 20px 0 20px 25px
+		border-bottom 1px solid $lightgray
+		text-transform uppercase
+		background-color $white
+.active-mobmenu
+	transform translate(0%);
+#location-arrow2
+	transition .3s
+@media(max-width:1040px)
+	.top2__menu
+		&-item
+			&:nth-child(2)
+				justify-content center
+			&-link
+				&:last-child
+					margin-right 0
+	.top2__menu
+		&-item
+			&-dropdown
+				&-link
+					min-width 150px
+	.r__menu
+		&-item
+			&-dropdown
+				&-link
+					min-width 150px
+@media(max-width:991px)
+	#header
+		height 60px
+	.header
+		display none
+	.header2
+		display none
+	.mob__header
+		display flex
+		position fixed
+		z-index 100
+		background-color $white
+	.mob__menu
+		margin-top 60px
+		display flex
+		flex-wrap wrap
+		flex-direction row
+		position fixed
+		width 100%
+		z-index 999
+		overflow-y scroll
+		&-item
+			border-left 1px solid $lightgray
+			background-color $white
+			flex-basis 25%
+			&-contacts
+				display flex
+				align-items center
+				border-left 1px solid $lightgray
+				background-color $darkgray
+				flex-basis 25%
+		&-item:nth-child(2) span
+			transition: 0.3s;
+			border-bottom: 1px dashed $white
+			&:hover
+				border-bottom: 1px dashed $red;
+			i
+				margin-right 4px
+			div
+				 display inline-block
+		&-item:nth-child(1),
+		&-item:nth-child(2),
+		&-item:nth-child(3),
+		&-item:nth-child(4),
+		&-item:nth-child(5),
+		&-item:nth-child(6)
+			flex-basis 33.33334%
+		&-item:nth-child(1),
+		&-item:nth-child(4),
+		&-item:nth-child(8),
+		&-item:nth-child(10)
+			border-left none
+		&-title
+			flex-basis 100%
+		&-item:nth-child(8),
+		&-item:nth-child(9)
+			flex-basis 50%
+		&-item:nth-child(10),
+		&-item:nth-child(11),
+		&-item:nth-child(12)
+			flex-basis 33%
+		&-item:nth-child(15)
+			flex-basis 25%
+	&.dd
+		transition .3s
+		&:hover
+			$red
+	&.dd + ul
+		height 0
+		overflow hidden
+		-webkit-transition height 0.3s ease-in-out
+		transition height 0.3s ease-in-out
+		display flex
+		flex-direction column
+		width 100%
+	&.dd + ul a
+		border-top 1px solid $lightgray
+		padding 20px 0
+	&.dd + ul a
+		text-indent 25px
+	&.dd-show
+		transform rotate(90deg)
+	&.dd-show + ul
+		height auto
+	.show .mob__menu
+		height auto
+@media(max-width:767px)
+	.mob__menu
+		&-item
+			&-location
+				flex-basis 50%
+		&-item:nth-child(14),
+		&-item:nth-child(15),
+		&-item:nth-child(17)
+			flex-basis 50%
+@media(max-width:650px)
+	.mob__menu
+		height 100%
+		flex-wrap nowrap
+		flex-direction column
+		&-item
+			flex-basis 100%
+		&-title
+			flex-basis 100%
+.menu-hider
+	opacity 0
